@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "2. Semester/Prog2/Prog_08_Generics.pdf"
+                "file": "2. Semester/Betriebssysteme/BS-05V-Linux 2 Prozesse und Benutzer.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Prog_08_Generics"
+              "title": "BS-05V-Linux 2 Prozesse und Benutzer"
             }
           }
         ]
@@ -194,7 +194,9 @@
   },
   "active": "4a10e8358550c368",
   "lastOpenFiles": [
-    "1. Semester/itans_66329.pdf",
-    "2. Semester/Prog2/Prog_08_Generics.pdf"
+    "2. Semester/Betriebssysteme/BS-05V-Linux 2 Prozesse und Benutzer.pdf",
+    "2. Semester/Betriebssysteme/BS-04V-Dateisysteme.pdf",
+    "2. Semester/Prog2/Prog_08_Generics.pdf",
+    "1. Semester/itans_66329.pdf"
   ]
 }
