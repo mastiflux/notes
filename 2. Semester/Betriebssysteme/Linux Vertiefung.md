@@ -121,3 +121,36 @@ umask // Maske mit Zugriffsrechten setzen
 
 ## Hardlinks und Softlinks
 
+### Hardlink
+
+	Hardlinks sind weitere Verzeichniseinträge, die auf den selben I-Node zeigen.
+
+- jede Datei hat I-Node mit Metadaten
+- Verzeichniseinträge verweisen nur auf I-Nodes
+- Erstellen:
+```shell
+ln quelldatei linkname
+ls -li // I-Node und Linkzähler anzeigen
+```
+- Link-Zähler der I-Node wird erhöht -> Datei existiert solange Zähler größer gleich 0
+- Löschen einer Datei verringert nur den Linkzähler (**rm**)
+- nur innerhalb des gleichen Dateisystems möglich (Stichwort *mount*)
+
+### Softlink
+
+	Softlinks (Symlinks) sind Dateien, die einen Pfad als Inhalt enthalten.
+
+![[Pasted image 20260413172419.png]]
+
+- Erstellen:
+```shell
+ln -s Ziel Linkname
+ls -l // Anzeigen
+```
+
+- Berechtigungen des Links selbst sind irrelevant (es gelten die des Ziels)
+- zeigt nur auf abs. oder rel. Pfad, NICHT auf I-Nodes
+- kann auf Verzeichnisse zeigen (auch auf Netzlaufwerke)
+- *Dangling Link:* Ziel wurde gelöscht/verschoben -> zeigt ins Leere
+  
+

@@ -33,7 +33,8 @@
               "title": "Linux Vertiefung"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,10 +207,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9167d905349e9bf5",
+  "active": "cff0b48e0c32012e",
   "lastOpenFiles": [
-    "2. Semester/Betriebssysteme/Linux Vertiefung.md",
     "2. Semester/Betriebssysteme/BS-05V-Linux 2 Prozesse und Benutzer.pdf",
+    "2. Semester/Betriebssysteme/Linux Vertiefung.md",
+    "Images/Pasted image 20260413172419.png",
     "Images/Pasted image 20260413153331.png",
     "Images/Pasted image 20260413144945.png",
     "2. Semester/Betriebssysteme/BS-04V-Dateisysteme.pdf",
