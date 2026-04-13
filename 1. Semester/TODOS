@@ -1,0 +1,26 @@
+//TODO
+Prog1: 
+Klassen und Objekte wiederholen, Koordinatensystemaufgabe weitermachen // Aufgabe abgeschlossen, kurze Übungen reichen aus
+    Arrays wiederholen // Funktionsweise und Konzepte sind klar, Übungen bei Artemis dazu sollten ausreichen
+UML (Objekt- und Klassendiagramme) // nur weiter lesen üben, ChatGPT hilft gut, grundsätzliches Konzept ist klar
+    Vererbung // Unterklassen von anderen Klassen, kann Eigenschaften und Methoden kopieren oder überschreiben mit @override und auf die Oberklasse zugreifen mit @super
+    Node Konzept
+--> erledigt
+
+
+Diskrete Strukturen:
+...siehe "prüfung stoff.pdf"
+ggf. mit ChatGPT lernen // cheat sheet erstellt und abgeschrieben
+exemplarische Prüfungsaufgaben durchgehen (ggf. Notizen auf cheat sheet machen)
+Portfolio Aufgaben beenden
+
+TGR:
+        Zahlensysteme (binär, okatl, hexadezimal) // geht schon gut, nur ein paar Aufgaben üben
+    Schaltnetze (Minterme/Maxterme), KV Tafeln // YouTube Videos haben geholfen, siehe Klausurvorbereitung Goodnotes
+FlipFlops (und Vergleich Latches) // verstanden, Übungen erfolgreich
+    PAL/PLA/PROM // PAL, PLA, PROM klar
+ALU Funktionsweise // nur wiederholen, grundsätzlich verstanden (Multiplexer, Demux Konzept klar)
+    Speicher
+Übungsaufgaben als Wiederholung // z.B Slido, Dokument von Jakob usw.
+--> erledigt
+

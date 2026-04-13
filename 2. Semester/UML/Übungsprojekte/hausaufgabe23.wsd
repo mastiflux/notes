@@ -1,0 +1,21 @@
+@startuml
+
+title Use Case Diagramm Hausaufgabe 2.3
+
+rectangle TeamBuildingApp {
+(manage team) as UC1
+(request to join the team) as UC2
+' (UC0) -down.> (UC1):<<include>>
+(UC1).>(UC2):<<include>>
+}
+
+together {
+actor participant
+actor "team manager" as em
+participant <|- em
+}
+
+participant --- UC0
+em --- UC1
+
+@enduml

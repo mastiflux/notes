@@ -1,0 +1,11 @@
+download and install setlx extension in vsc
+create [file name].stlx file in vsc (e.g. "main.stlx")
+write code...
+press "ctrl" + "s"
+open terminal in vsc
+to run the file type: "./setlx [file name].stlx"
+-> if the program works, the result will appear in the terminal
+
+
+
+

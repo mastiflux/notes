@@ -1,0 +1,21 @@
+@startuml
+title UseCase Test
+left to right direction
+
+rectangle RaceTimeScoringApp{
+usecase "view race schedule" as UC0
+(manage race schedule) as UC1
+(notifiy participants) as UC2
+' (UC0) -down.> (UC1):<<include>>
+(UC1).> (UC2):<<include>>
+}
+together{
+    actor participant
+    actor "eventmanager" as em
+    participant <|- em
+}
+
+participant --- UC0
+em --- UC1
+
+@enduml

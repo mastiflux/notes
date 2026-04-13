@@ -1,0 +1,41 @@
+Verwaltung Studierende
+Datenstruktur: 
+    Tabelle Studierende
+Datentypen: 
+- Student
+    Matrikelnummer: int
+    Name: String
+    Geburtstag: LocalDate
+    Studiengang: String
+    absolvierte Vorlesungen: Vorlesung[]
+    aktuelle Teilnahme Vorlesungen: Vorlesung[]
+    Noten: Note[]
+- Vorlesung
+    Name: String
+    Dozent*in: String
+- Note
+    Vorlesung: Vorlesung
+    Bewertung: double
+
+Einschränkungen:
+    Matrikelnummer für jeden Studenten einzigartig
+    Name, Geburtstag, Studiengang sind Pflicht
+
+    Name, Dozent*in sind Pflicht
+
+    Vorlesung, Bewertung sind Pflicht
+
+Operationen:
+    Studenten exmatrikulieren (löschen)
+    Studenten immatrikulieren (erstellen)
+    nach Studenten suchen (bspw. über Matrikelnummer, Name oder Vorlesung)
+    
+
+Relationen Beziehung
+
+hören (hörer_FK -> Studenten.mtkNr, vorlesung_FK -> Vorlesungen.vorlNr)
+...
+
+umfassen (prüfung_FK -> Prüfungen.prüfName, fach_FK -> Vorlesungen.vorlNr, prüfling_FK -> Studenten.mtkNr)
+abnehmen (prüfer_FK -> Professoren.profNr, prüfung_FK -> Prüfungen.prüfName, prüfling_FK -> Studenten.mtkNr)
+ablegen (prüfling_FK -> Studenten.mtkNr, prüfung_FK -> Prüfungen.prüfName)
