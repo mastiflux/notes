@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d47ff449a4fe8a03",
+        "id": "3df5f98307da20b4",
         "type": "tabs",
         "children": [
           {
-            "id": "f8b395185ee3df6f",
+            "id": "4a10e8358550c368",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -192,6 +192,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d26e9dc7f661fe01",
-  "lastOpenFiles": []
+  "active": "4a10e8358550c368",
+  "lastOpenFiles": [
+    "1. Semester/itans_66329.pdf",
+    "2. Semester/Prog2/Prog_08_Generics.pdf"
+  ]
 }
