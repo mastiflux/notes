@@ -13,27 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Semester/Lineare Algebra/Lineare Gleichungssysteme.md",
+                "file": "2. Semester/AlgoDat/Bäume.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lineare Gleichungssysteme"
+              "title": "Bäume"
             }
           },
           {
-            "id": "1f538661ac1c75f1",
+            "id": "19503d91ded1b28b",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "2. Semester/Lineare Algebra/LineareAlgebra-2026-04-15.pdf"
+                "file": "2. Semester/AlgoDat/Aufgaben Bäume.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "LineareAlgebra-2026-04-15"
+              "icon": "lucide-file",
+              "title": "Aufgaben Bäume"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,11 +209,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9167d905349e9bf5",
+  "active": "19503d91ded1b28b",
   "lastOpenFiles": [
+    "2. Semester/AlgoDat/Bäume.md",
+    "2. Semester/AlgoDat/Aufgaben Bäume.md",
+    "2. Semester/Betriebssysteme/Linux Vertiefung.md",
+    "2. Semester/Lineare Algebra/Lineare Gleichungssysteme.md",
     "Images/Pasted image 20260415204642.png",
     "2. Semester/Lineare Algebra/LineareAlgebra-2026-04-15.pdf",
-    "2. Semester/Lineare Algebra/Lineare Gleichungssysteme.md",
     "Images/Pasted image 20260415204613.png",
     "Images/Pasted image 20260415204416.png",
     "Images/Pasted image 20260415204306.png",
@@ -219,9 +225,7 @@
     "Images/Pasted image 20260415203957.png",
     "Images/Pasted image 20260415203215.png",
     "Images/Pasted image 20260415203137.png",
-    "2. Semester/AlgoDat/Bäume.md",
     "2. Semester/Lineare Algebra/Skript-LineareAlgebra-2025-09.pdf",
-    "2. Semester/Betriebssysteme/Linux Vertiefung.md",
     "2. Semester/Betriebssysteme/BS-05P-Linux.odt",
     "2. Semester/Betriebssysteme/lu1810338jhh.tmp",
     "2. Semester/Betriebssysteme/BS-05P-Linux.docx",
@@ -232,7 +236,6 @@
     "2. Semester/Betriebssysteme/BS-05V-Linux 2 Prozesse und Benutzer.pdf",
     "Images/Pasted image 20260413172419.png",
     "Images/Pasted image 20260413153331.png",
-    "Images/Pasted image 20260413144945.png",
     "2. Semester/Prog2/Prog_08_Generics.pdf"
   ]
 }
