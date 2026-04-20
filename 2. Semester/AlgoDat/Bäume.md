@@ -77,3 +77,54 @@
 ![[Screenshot_20260413_105147.png]]
 ![[Pasted image 20260413105250.png]]
 ![[Pasted image 20260413105333.png]]
+
+---
+
+## Heap
+
+- ist ein Binärbaum, der folgende Eigenschaften hat:
+	- vollständig, d.h. Blattebene ist von links nach rechts gefüllt
+	- der Schlüssel eines jeden knotens ist immer kleiner (oder gleich), als die Schlüssel seiner Kinder
+-> Die Wurzel ist immer das kleinste Element
+
+- wird in einem Feld gespeichert:
+![[Pasted image 20260420082559.png]]
+
+### getMinimum()
+
+- liefert die Wurzel arr[1]
+- es entsteht ein Loch
+- -> wird durch rechtestes Element der Blattebene aufgefüllt
+- Heap-Eigenschaften müssen wieder hergestellt werden (reHeap)
+
+*reHeap:*
+![[Pasted image 20260420082913.png]]
+![[Pasted image 20260420082949.png]]
+
+*reheap() im Array:*
+![[Pasted image 20260420083219.png]]
+
+### Sortieren mit HeapSort
+
+- ähnlich wie SelectionSort (geht schnell -> Wurzel nehmen)
+- reHeap $O(log\,n)$ 
+- Komplexität $O(n*log\,n)$ 
+- besser als QuickSort (durchschnittlich aber langsamer), vergleichbar mit MergeSort
+- InPlace, nicht stabil
+
+![[Pasted image 20260420083555.png]]
+
+###  Heap herstellen
+
+- immer von **unten nach oben**
+- Blätter haben immer Heap-Eigenschaften. deshalb $k\,:=\,n/2$ 
+
+![[Pasted image 20260420083828.png]]
+
+--- 
+**Sortieren**
+
+![[Pasted image 20260420084019.png]]
+![[Pasted image 20260420084033.png]]
+
+
