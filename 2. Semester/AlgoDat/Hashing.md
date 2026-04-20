@@ -114,6 +114,8 @@
 
 Hashfunktion: $h(e)=e\,mod\,7$
 
+-> mit verkettetem Überläufer:
+
 1. Indizes berechnen: 
 	- 10: $10\,mod\,7=3$
 	- 4: $4\,mod\,7=4$
@@ -171,3 +173,68 @@ Zustand der Tabelle:
 |5|/|
 |6|13|
 
+-> mit linearem Sondieren:
+
+1. *identisch zu verkettetem Überläufer*
+
+2. *identisch zu verkettetem Überläufer*
+
+3. Indizes berechnen: 
+	- 17: Position 3 (belegt) -> Position 4 (belegt) -> Position 5
+	- 6: Position 6
+	- 13: Position 6 (belegt) -> Position 0 (belegt) -> Position 1
+
+Zustand der Tabelle:
+
+|**Index**|**Wert**|
+|---|---|
+|0|14|
+|1|13|
+|2|-|
+|3|10|
+|4|4|
+|5|17|
+|6|6|
+
+4. Suche: 
+	- 11: an Stelle 4 -> nicht gefunden -> Sondierung: durchgehen bis leere Stelle (in dem Fall 2) -> nicht gefunden
+	- 13: an Stelle 6 -> nicht gefunden -> Sondierung: bis Stelle 1 -> gefunden
+	- 15: an Stelle 1 -> nicht gefunden -> Sondierung: bis leere Stelle -> nicht gefunden
+
+5. Löschen und Suchen
+	- Lösche 6: Stelle 6 wird als DELETED markiert
+	- Suche 13: Stelle 6 ist DELETED -> Sondierung: bis Stelle 1 -> gefunden
+
+Zustand der Tabelle: 
+
+|**Index**|**Wert**|
+|---|---|
+|0|14|
+|1|13|
+|2|-|
+|3|10|
+|4|4|
+|5|17|
+|6|_DELETED_|
+
+6. Rehashing:
+	- Vergrößerung der Tabelle auf nächste Primzahl N = 13
+	- Einfügen aller vorhandenen Elemente 
+
+**Endzustand nach Rehashing**
+
+|**Index**|**Wert**|
+|---|---|
+|0|13|
+|1|14|
+|2|-|
+|3|-|
+|4|4|
+|5|17|
+|6|-|
+|7|-|
+|8|-|
+|9|-|
+|10|10|
+|11|-|
+|12|-|
