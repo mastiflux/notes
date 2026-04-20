@@ -33,7 +33,8 @@
               "title": "Prozesse"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Semester/Prog2/Prog_08_Generics.pdf",
+                "file": "2. Semester/Betriebssysteme/Prozesse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rückverweise auf Prog_08_Generics"
+              "title": "Rückverweise auf Prozesse"
             }
           },
           {
@@ -125,12 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Semester/Prog2/Prog_08_Generics.pdf",
+                "file": "2. Semester/Betriebssysteme/Prozesse.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links von Prog_08_Generics öffnen"
+              "title": "Ausgehende Links von Prozesse öffnen"
             }
           },
           {
@@ -168,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Semester/Prog2/Prog_08_Generics.pdf",
+                "file": "2. Semester/Betriebssysteme/Prozesse.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Gliederung von Prog_08_Generics"
+              "title": "Gliederung von Prozesse"
             }
           },
           {
@@ -206,22 +207,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6b08f111d6ee9824",
+  "active": "9167d905349e9bf5",
   "lastOpenFiles": [
-    "2. Semester/Betriebssysteme/Prozesse.md",
+    "Images/Pasted image 20260420154826.png",
     "2. Semester/Betriebssysteme/BS-06V-Prozesse.pdf",
-    "Pasted image 20260420145231.png",
-    "Pasted image 20260420142413.png",
+    "2. Semester/Betriebssysteme/Prozesse.md",
+    "Images/Pasted image 20260420154307.png",
+    "Images/Pasted image 20260420152141.png",
+    "Images/Pasted image 20260420151932.png",
+    "Images/Pasted image 20260420151417.png",
+    "Pasted image 20260420151341.png",
+    "Images/Pasted image 20260420150943.png",
+    "Images/Pasted image 20260420145231.png",
+    "Images/Pasted image 20260420142413.png",
     "2. Semester/Prog2/Modularisierung.md",
     "2. Semester/Prog2/Prog_10_Modularisierung.pdf",
     "Images/Pasted image 20260420110555.png",
     "Images/Pasted image 20260420110825.png",
-    "Images/Pasted image 20260420124936.png",
-    "Images/Pasted image 20260420124642.png",
-    "Images/Pasted image 20260420122131.png",
-    "Images/Pasted image 20260420121656.png",
-    "Images/Pasted image 20260420120609.png",
-    "Images/Pasted image 20260420120428.png",
     "2. Semester/Prog2/Prog_09_Collections.pdf",
     "2. Semester/AlgoDat/Graphen.md",
     "2. Semester/AlgoDat/Hashing.md",
