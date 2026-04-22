@@ -51,6 +51,8 @@ $m\,Basisvektoren\,des\,Kerns\Rightarrow dim(Kern(f))=m$
 ![[Pasted image 20260415204235.png]]
 ![[Pasted image 20260415204306.png]]
 
+
+--- 
 ### Bestimmung der Inversen einer Matrix
 
 - $n * n$ Matrix A
