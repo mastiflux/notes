@@ -89,4 +89,5 @@ _Beispiele:_
 -> durchgezogene Linie = positives Vorzeichen, gestrichelte Linie = negatives Vorzeichen
 
 ---
+### Eigenschaften von Determinanten
 
