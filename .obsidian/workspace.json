@@ -4,36 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "3fa61b480e0a5074",
+        "id": "2363eb2b882a3f28",
         "type": "tabs",
         "children": [
           {
-            "id": "5516d4bf817b89ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. Semester/Prog2/JavaFX.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "JavaFX"
-            }
-          },
-          {
-            "id": "7e2078049aca1ea8",
+            "id": "749f67a994c8f2a6",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "2. Semester/Prog2/Prog_11_JavaFX.pdf"
+                "file": "2. Semester/Datenbanken/Datenbanken - 05_03 - Logisches Design (2v3).pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Prog_11_JavaFX"
+              "title": "Datenbanken - 05_03 - Logisches Design (2v3)"
+            }
+          },
+          {
+            "id": "70b349a68d6fe739",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2. Semester/Datenbanken/Normalisierung.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Normalisierung"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,8 +207,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9167d905349e9bf5",
+  "active": "70b349a68d6fe739",
   "lastOpenFiles": [
+    "2. Semester/Datenbanken/Datenbanken - 05_03 - Logisches Design (2v3).pdf",
+    "2. Semester/Datenbanken/Normalisierung.md",
+    "2. Semester/Datenbanken/A1 - Aufgabe.pdf",
+    "2. Semester/Datenbanken/Übung 1.drawio.pdf",
+    "2. Semester/Datenbanken/Übungsaufgabe 1 - Kriterien Peer Review.pdf",
+    "2. Semester/Lineare Algebra/Vorlesungsplan-LineareAlgebra-SS26.pdf",
     "2. Semester/Prog2/Prog_11_JavaFX.pdf",
     "2. Semester/Prog2/JavaFX.md",
     "Images/Pasted image 20260422132205.png",
@@ -227,17 +234,12 @@
     "2. Semester/Lineare Algebra/latexMathNotation.pdf",
     "2. Semester/Lineare Algebra/Lineare Gleichungssysteme.md",
     "2. Semester/Lineare Algebra/LineareAlgebra-2026-04-15.pdf",
-    "2. Semester/Lineare Algebra/Vorlesungsplan-LineareAlgebra-SS26.pdf",
     "2. Semester/AlgoDat/Bäume.md",
     "2. Semester/AlgoDat/Aufgaben Bäume.md",
     "2. Semester/Betriebssysteme/BS-06V-Prozesse.pdf",
     "2. Semester/Prog2/Modularisierung.md",
-    "2. Semester/Prog2/Prog_10_Modularisierung.pdf",
-    "2. Semester/Prog2/Prog_09_Collections.pdf",
     "2. Semester/AlgoDat/Graphen.md",
     "2. Semester/AlgoDat/Hashing.md",
-    "2. Semester/AlgoDat/14.AuD_Graphen1.pdf",
-    "2. Semester/AlgoDat/13.AuD_Hashing.pdf",
     "Unbenannt.canvas",
     "2026-04-20.md",
     "Unbenannt 1.md",
