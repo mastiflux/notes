@@ -27,7 +27,7 @@ Nachteile:
 
 ## Die zweite Normalform
 
-**Eine Relation ist in der zweiten Normalform, wenn die sich in der ersten Normalform befindet und falls jedes nicht-SChlüsselattribut der Relation voll funktional abhängig von jedem Schlüsselkandidaten der Relation ist.
+**Eine Relation ist in der zweiten Normalform, wenn die sich in der ersten Normalform befindet und falls jedes nicht-Schlüsselattribut der Relation voll funktional abhängig von jedem Schlüsselkandidaten der Relation ist.
 
 - Zerlegung der Tabellen, bis Definition zutrifft
 

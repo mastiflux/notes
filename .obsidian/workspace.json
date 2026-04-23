@@ -13,14 +13,28 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "2. Semester/Datenbanken/Datenbanken - 05_03 - Logisches Design (2v3).pdf"
+                "file": "2. Semester/Datenbanken/Datenbanken - 05_05_DR2 - HandsOn - Relationsschemata und Normalisierung.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Datenbanken - 05_03 - Logisches Design (2v3)"
+              "title": "Datenbanken - 05_05_DR2 - HandsOn - Relationsschemata und Normalisierung"
             }
           },
           {
-            "id": "70b349a68d6fe739",
+            "id": "e95c255b6d964ada",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Übungsaufgabe 2 - Felix Häse.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Übungsaufgabe 2 - Felix Häse"
+            }
+          },
+          {
+            "id": "1fdef79c6619051e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -35,6 +49,24 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "8c9848d277d3ddff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c68ea997f34a3f92",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "2. Semester/Datenbanken/A2 - Aufgabe.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "A2 - Aufgabe"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -91,7 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "8c83564799552251",
@@ -193,7 +225,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,10 +239,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "70b349a68d6fe739",
+  "active": "e95c255b6d964ada",
   "lastOpenFiles": [
-    "2. Semester/Datenbanken/Datenbanken - 05_03 - Logisches Design (2v3).pdf",
+    "2. Semester/Datenbanken/Datenbanken - 05_05_DR2 - HandsOn - Relationsschemata und Normalisierung.pdf",
+    "Übungsaufgabe 2 - Felix Häse.md",
     "2. Semester/Datenbanken/Normalisierung.md",
+    "Unbenannt.md",
+    "2. Semester/Datenbanken/A2 - Aufgabe.pdf",
+    "HandsOn.md",
+    "2. Semester/Datenbanken/Datenbanken - 05_03 - Logisches Design (2v3).pdf",
     "2. Semester/Datenbanken/A1 - Aufgabe.pdf",
     "2. Semester/Datenbanken/Übung 1.drawio.pdf",
     "2. Semester/Datenbanken/Übungsaufgabe 1 - Kriterien Peer Review.pdf",
@@ -233,10 +270,8 @@
     "2. Semester/Lineare Algebra/Determinanten.md",
     "2. Semester/Lineare Algebra/latexMathNotation.pdf",
     "2. Semester/Lineare Algebra/Lineare Gleichungssysteme.md",
-    "2. Semester/Lineare Algebra/LineareAlgebra-2026-04-15.pdf",
     "2. Semester/AlgoDat/Bäume.md",
     "2. Semester/AlgoDat/Aufgaben Bäume.md",
-    "2. Semester/Betriebssysteme/BS-06V-Prozesse.pdf",
     "2. Semester/Prog2/Modularisierung.md",
     "2. Semester/AlgoDat/Graphen.md",
     "2. Semester/AlgoDat/Hashing.md",
