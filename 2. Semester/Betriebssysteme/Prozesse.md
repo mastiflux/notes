@@ -149,7 +149,6 @@ int main(void) {
 - Betriebssystem erzeugt erst bei Schreibzugriff echte Kopie (_copy-on-write_)
 
 ---
-
 ### Terminierung
 
 - Prozesszusammenführung zum beenden
@@ -173,7 +172,7 @@ void _exit(int status);
 pid_t wait(int *status); 
 ```
 
-
+---
 ### Unterbrechung
 
 **Signale**
@@ -188,3 +187,167 @@ int kill(pid_t pid, int sig); // 0=ok
 ```
 
 ![[Pasted image 20260420154826.png]]
+
+---
+### Threads
+
+- leichtgewichtige Alternative zu Prozessen
+- Ausführungspfad innerhalb eines Prozesses
+- keine eigenen Ressourcen
+- enthält Elemente: 
+	- Zustand
+	- Kontext
+	- Stack
+	- Speciherplatz für lokale Variablen
+	- Zugriff auf gemeinsame Ressourcen innerhalb eines Prozesses
+
+```c
+#include <pthread.h> 
+
+int pthread_create(pthread_t *thread, const pthread_attr_t *attr, void *(*start_routine)(void *), void *arg);
+```
+
+```cpp
+#include <thread>
+
+Thread myThread(myfunc, arg1, arg2, ...);
+//...
+// wait for thread to finish (blocking)
+myThread.join();
+```
+---
+## Prozessorzuteilung (Scheduling)
+
+- ==Scheduler== wählt Prozess aus, der als nächstes laufen soll -> ist Teil des Betriebssystems
+- Umschlatung durch Dispatcher
+- trifft Entscheidungen nur für je einen Prozessorkern
+- viele vers. Algortihmen und Strategien -> kommt auf Einsatzgebiet an
+	Kategorien von Strategien:
+	*1. Stapelverarbeitung:* Gehaltsabrechnungen, Zinsgutschriften, KI-Lernen (keine Interaktion mit Benutzern, eher Server)
+	*2. Interaktive Systeme:* Textverarbeitung, IDE (betrifft auch Serveranwendungen, z.B. Buchungssysteme)
+	*3. Echtzeitsysteme:* Steuerung Industrieanlage, Autopilot
+
+---
+**Kriterien und Ziele:**
+
+- Fairness (jeder Prozess bekommt fairen Anteil der CPU-Zeit)
+- Balance (alles ausgelastet)
+- Durchsatz (max. Jobs pro Zeiteinheit)
+- Durchlaufzeit (min. Zeit von Start bis Ende)
+- CPU-Ausnutzung
+- Antwortzeit
+- Proportionalität (Erwartung Benutzer an Aufwand)
+- Deadlines
+- Vorhersagbarkeit
+
+---
+**Wann schedulen?**
+
+- Erzeugung Kindprozess
+- Terminierung Prozess
+- Blockierender Systemaufruf
+- Aufhebung der Blockierung eines Prozesses
+- Timerinterrupt
+
+---
+**Varianten:**
+
+==Kooperative Prozessorvergabe==
+
+- Umschaltung nur, wenn Prozess freiwillig Prozessor abgibt oder terminiert
+- CPU-intensiver Prozess kann ewig laufen, wenn er nicht kooperiert
+- Reaktion anderer Prozesse auf externe Ereignisse verspätet
+
+==Präemptive Prozessorvergabe==
+
+- Umschaltung durch Interrupts
+- wenig Beeinflussung der Prozesse untereinander
+- Reaktionszeit auf externe Ereignisse kurz
+
+---
+### Prozessoraffinität auf Multicore-Systemen
+
+**Problem**
+
+- schnellste CPU-Caches sind nur lokal für einen einzigen Kern
+- bei Scheduling desselben Prozesses auf einem neuen Kern -> keine relevanten Daten im Cache -> Cache Miss kostet viel Zeit
+
+**Lösung**
+
+- implzite Prozessoraffinität (Kernel versucht einem Kern immer den gleichen Prozess zuzuordnen)
+- Linux unterstützt auch explizite Prozessoraffinität (erfordert root-Rechte)
+
+---
+### Batchverarbeitung: FCFS, SPN, SRTF, RR
+#### First Come First Serve (FCFS)
+
+- rechenbereite Prozesse werden in Wartschlange eingeordnet und gemäß Ankunftszeit abgearbeitet
+- wenn Prozess blockiert -> wenn wieder rechenbereit, neu am Ende einsortiert
+- sehr einfach
+- hohe Durchlaufzeit bei I/O-intensiven Prozessen
+
+---
+#### Shortest Process Next (SPN)
+
+- Prozesse werden nach ursprünglich geplanter Laufzeit sortiert und abgearbeitet
+- bevorzugt kurze Prozesse
+- meist nicht präemptiv (SRTF als präemptive Variante, *Shortest Remaining Time First*)
+
+---
+#### Round Robin (RR)
+
+- jeder Prozess darf nur gewisse Zeit Z laufen, wird dann unterbrochen und ans Ende der Warteschlange gestellt
+- Timeslice: feste Zeitspanne Z (Quantum), typisch 1-100 ms -> wenn zu kurz -> hoher Dispatching-Overhead, wenn zu lang -> ruckelt
+
+![[Pasted image 20260427150638.png]]
+
+---
+### Prioritätsbasiertes Scheduling
+
+**statische Prioritäten**
+
+- jeder Prozess hat eindeutige Priorität
+- Scheduler wählt immer Prozess mit höchster Priorität
+- mögliches Problem: Starvation
+
+**Multi-Level Scheduling(ML)**
+
+- jedem Prozess wird Priorität zugeordnet
+- erst alle Prozesse eine Stufe durchlaufen, dann nächste Prioriätsebene
+
+**Multi-Level Feedback**
+
+- Prozess wird je nach bisheriger Laufzeit priorisiert
+- neuer Prozess -> höchste Priorität, dann schrittweise herabgestuft
+- präemptiv mit festem Zeitintervall
+
+---
+### Klassischer Unix-Scheduler
+
+- Multilevel Feedback, präemptiv mit festem Zeitintervall für Repriorisierung
+- Priorität wird abhängig z.B. von seiner verbrauchten CPU-Zeit periodisch berechnet
+
+$T_{CPU}(i)=(T_{CPU}(i-1))\div2\,;\,P(i)=P_{base}+P_{nice}+(T_{CPU}(i))\div2$
+
+$P$: Priorität
+$P_{base}$: Basispriorität
+$P_{nice}$: Nice-Level 
+$T_{CPU}$: CPU-Zeit
+$i$: Nummer des Scheduling-Intervalls
+
+Beispiel siehe [[BS-06V-Prozesse.pdf]] 
+
+**Typische Umsetzung**
+
+![[Pasted image 20260427152818.png]]
+
+---
+### Metriken und Vergleich
+
+- Prozesse werden beschrieben durch
+	- $T_a$ Arrival Time: Zeitpunkt, wo Prozess erstmalig bereit wird
+	- $T_s$ Service Time: Rechenzeit
+	- $T_c$ Completion Time: Zeitpunkt, zu dem der Prozess beendet wird
+	- $T_r$ Turnaround Time: $T_c - T_a$ (normalisiert: $T_r\div T_s$)
+
+
