@@ -44,7 +44,7 @@
 ![[Pasted image 20260420102751.png]]
 ![[Pasted image 20260420102919.png]]
 
-
+---
 ## Realisierung von Graphen
 
 - Übliche Datenstrukturen: Realisierungen unterscheiden sich im Platzbedarf bei der Speicherung und bei der Komplexität der Basisoperationen (Kante einfügen / löschen, Knoten einfügen / löschen)
@@ -56,6 +56,7 @@
 	- Knoten mit Zeiger-Liste
 	- unüblich da komplexe Strukturen mit vielen Fehlermöglichkeiten (beim Speichern)
 
+---
 ## Kanten- und Knotenlisten
 
 - einfache Realisierunf bei durchnummerierten Knoten
@@ -143,6 +144,8 @@ Die Adjazenzmatrix eines gerichteten Graphen G ist eine n×n Matrix mit den Elem
 | Löschen Kante   | O(m)            | O(n+m)          | O(1)              | O(n)             |
 | Einfügen Knoten | O(1)            | O(1)            | O(n$^2$)          | O(1)             |
 | Löschen Knoten  | O(m)            | O(n+m)          | O(n$^2$)          | O(n+m)           |
+
+---
 ## Implementierung in Java
 
 - Node
@@ -224,3 +227,109 @@ public class Graph {
 	}
 }
 ```
+
+---
+## Spannbäume
+
+- ist ein Baum, der alle Knoten von einem Graphen G und nur Kanten aus G enthält
+
+**Breitendurchlauf**
+
+- erzeuge eine Warteschlange
+- markiere alle Kanten, die vom aktuellen Knoten zu noch nicht markierten Knoten führen, und packe diese Nachbarn in die Warteschlange
+- gehe zum nächsten Knoten in der Warteschlange -> bis sie leer ist
+
+- Warteschlange dient als Zwischenspeicher
+- Farbmarkierungen geben Status an (weiß = unbearbeitet, grau = in Bearbeitung, schwarz = abgearbeitet)
+- pro Knoten wird Entfernung zum Start berechnet
+- Vorgängerkanten bilden aufgespannten Baum mit Startknoten als Wurzel
+
+*Pseudocode*
+
+```
+algorithm BFS(G, s) 
+Eingabe: ein Graph G, ein Startknoten s des Graphen aus V[G] 
+foreach Knoten u aus V[G] \ s do 
+	farbe[u] := weiß; d[u] := unendlich; pi[u] := null 
+od 
+farbe[s] := grau; d[s] := 0; pi[s] := null; 
+Q = new Queue; Q.enter(s); 
+while ! Q.isEmpty() do 
+	u := Q.leave(); 
+	foreach v in „Zielknoten ausgehender Kanten“ von u do 
+		if farbe[v] = weiß then 
+			farbe[v] := grau; d[v] := d[u] + 1; pi[v] := u; 
+			Q.enter(v) 
+		fi 
+	od 
+	farbe[u] := schwarz 
+od 
+```
+
+*Beispiel: Schritt für Schritt*
+
+![[Pasted image 20260427101742.png]]
+
+---
+
+**Tiefendurchlauf**
+
+- realisiert rekursiven Durchlauf durch gerichteten Graphen
+- Farbmarkierungen identisch
+
+- rekursiver Abstieg
+- pro Knoten zwei Werte (+ Farbe)
+- rekursiver Aufruf nur bei weißen Knoten
+- Komplexität: $O(|V|+|E|)$
+- alle von dem Knoten ausgehenden Kanten werden genau einmal aufgerufen
+
+*Pseudocode*
+
+```
+algorithm DFS(G) 
+	Eingabe: ein Graph G 
+	foreach Knoten u aus V[G] do 
+		farbe[u] := weiß; 
+		pi[u] := null 
+	od 
+	zeit := 0; 
+	foreach Knoten u aus V [G] do 
+		if farbe[u] = weiß then 
+			DFSvisit(u) 
+		fi 
+	od 
+
+algorithm DFSvisit(u) 
+	Eingabe: ein Knoten u 
+	farbe[u] := grau; zeit := zeit+1; 
+	d[u] := zeit;
+	foreach v in Zielknoten ausgehender Kanten von u do 
+		if farbe[v] = weiß then 
+			pi[v] := u; 
+			DFSvisit(v) 
+		fi 
+	od 
+farbe[u] := schwarz; zeit := zeit+1; 
+f[u] := zeit;
+```
+
+*Beispiel: Schritt für Schritt*
+
+![[Pasted image 20260427102556.png]]
+![[Pasted image 20260427102616.png]]
+
+---
+### Topologisches Sortieren
+
+- sortiert nach ==Nachbarschaft==, nicht nach totaler Ordnung
+- DFS erstellt topol. Ordnung "on-the-fly"
+- Sortierung nach f-Wert (invers) ergibt Reihenfolge
+- keine explizite Sortierung!
+
+---
+
+*Beispiel zertstreuter Professor*
+
+![[Pasted image 20260427104526.png]]
+![[Pasted image 20260427104539.png]]
+
