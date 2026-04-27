@@ -4,11 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "72ed57b123cfed9c",
+        "id": "61373a28fb64dc13",
         "type": "tabs",
         "children": [
           {
-            "id": "b0d36744f65047f3",
+            "id": "d2caa1eae3fdf731",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "2. Semester/AlgoDat/15.AuD_Fragestunde.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "15.AuD_Fragestunde"
+            }
+          },
+          {
+            "id": "b888c1b5ae0b6678",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,7 +33,8 @@
               "title": "Klausurvorbereitung"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -194,9 +207,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9167d905349e9bf5",
+  "active": "b888c1b5ae0b6678",
   "lastOpenFiles": [
+    "2. Semester/AlgoDat/Fragestunde Notizen.md",
     "2. Semester/Klausurvorbereitung.md",
+    "2. Semester/AlgoDat/15.AuD_Fragestunde.pdf",
+    "Modulhandbuch.pdf",
     "2. Semester/Datenbanken/Datenbanken - 05_05_DR2 - HandsOn - Relationsschemata und Normalisierung.pdf",
     "2. Semester/Datenbanken/Normalisierung.md",
     "2. Semester/Datenbanken/Übungsaufgabe 2 - Felix Häse.md",
@@ -208,7 +224,6 @@
     "2. Semester/Datenbanken/Übung 1.drawio.pdf",
     "2. Semester/Datenbanken/Übungsaufgabe 1 - Kriterien Peer Review.pdf",
     "2. Semester/Lineare Algebra/Vorlesungsplan-LineareAlgebra-SS26.pdf",
-    "2. Semester/Prog2/Prog_11_JavaFX.pdf",
     "2. Semester/Prog2/JavaFX.md",
     "Images/Pasted image 20260422132205.png",
     "Images/Pasted image 20260422131927.png",
@@ -222,7 +237,6 @@
     "Images/Pasted image 20260422122612.png",
     "2. Semester/Betriebssysteme/BS-06Ua-Prozesse-Lösung.md",
     "2. Semester/Betriebssysteme/Prozesse.md",
-    "2. Semester/Lineare Algebra/Skript-LineareAlgebra-2025-09.pdf",
     "2. Semester/Lineare Algebra/Determinanten.md",
     "2. Semester/Lineare Algebra/Lineare Gleichungssysteme.md",
     "2. Semester/AlgoDat/Bäume.md",

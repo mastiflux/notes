@@ -5,3 +5,10 @@
 - Kern von Abbildungen
 
 ---
+## AlgoDat
+
+- multiple choice Komplexitäten
+- gaußsche Summenformel wdh! -> ${n\cdot(n+1)}\div2$ (O-Notationen mit Summenformel kommen dran)
+- Programmieranteil!
+- 
+---
