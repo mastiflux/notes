@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "2. Semester/AlgoDat/16.AuD_Graphen2.pdf"
+                "file": "2. Semester/Prog2/Prog_11_JavaFX.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "16.AuD_Graphen2"
+              "title": "Prog_11_JavaFX"
             }
           },
           {
@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Semester/AlgoDat/Graphen.md",
+                "file": "2. Semester/Prog2/JavaFX.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Graphen"
+              "title": "JavaFX"
             }
           }
         ],
@@ -207,8 +207,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "698df7fbf29b6526",
+  "active": "9167d905349e9bf5",
   "lastOpenFiles": [
+    "2. Semester/Prog2/Prog_11_JavaFX.pdf",
+    "2. Semester/Prog2/JavaFX.md",
+    "Images/Pasted image 20260427131320.png",
+    "2. Semester/Klausurvorbereitung.md",
+    "Images/Pasted image 20260427124157.png",
+    "Images/Pasted image 20260427124107.png",
+    "Images/Pasted image 20260427123911.png",
+    "Pasted image 20260427123501.png",
+    "Images/Pasted image 20260427121718.png",
     "2. Semester/AlgoDat/16.AuD_Graphen2.pdf",
     "2. Semester/AlgoDat/Graphen.md",
     "Images/Pasted image 20260427104539.png",
@@ -216,9 +225,7 @@
     "Modulhandbuch.pdf",
     "Images/Pasted image 20260427102616.png",
     "Images/Pasted image 20260427102556.png",
-    "Images/Pasted image 20260427101742.png",
     "2. Semester/AlgoDat/15.AuD_Fragestunde.pdf",
-    "2. Semester/Klausurvorbereitung.md",
     "2. Semester/AlgoDat/Fragestunde Notizen.md",
     "2. Semester/Datenbanken/Datenbanken - 05_05_DR2 - HandsOn - Relationsschemata und Normalisierung.pdf",
     "2. Semester/Datenbanken/Normalisierung.md",
@@ -229,13 +236,6 @@
     "2. Semester/Datenbanken/Datenbanken - 05_03 - Logisches Design (2v3).pdf",
     "2. Semester/Datenbanken/A1 - Aufgabe.pdf",
     "2. Semester/Datenbanken/Übung 1.drawio.pdf",
-    "2. Semester/Datenbanken/Übungsaufgabe 1 - Kriterien Peer Review.pdf",
-    "2. Semester/Prog2/JavaFX.md",
-    "Images/Pasted image 20260422132205.png",
-    "Images/Pasted image 20260422131927.png",
-    "Images/Pasted image 20260422131559.png",
-    "Images/Pasted image 20260422131222.png",
-    "Images/Pasted image 20260422131022.png",
     "2. Semester/Betriebssysteme/BS-06Ua-Prozesse-Lösung.md",
     "2. Semester/Betriebssysteme/Prozesse.md",
     "2. Semester/Lineare Algebra/Determinanten.md",

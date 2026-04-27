@@ -293,5 +293,274 @@ primaryStage.show();
 ```
 
 ---
-## Wichtige Controls
+## Entwurf einer Anwendung mit GUI
 
+- praktisch alle Anwendungen mit GUI werden nach dem ==Model-View-Controller-Pattern== aufgebaut
+
+**Design Pattern**
+
+- beschreibt einen bewährten Ansatz zur Lösung einer Software-Entwurfsaufgabe, die wiederholt und in verschiedenen Kontexten auftritt
+- geben häufig verwendeten Lösungen einen Namen und erleichtern damit die Kommunikation
+- beschreiben Details einer Lösung
+- dokumentieren das Erfahrungswissen zu den Vor- und Nachteilen eines Lösungsansatzes
+
+==Single Responsibility Principle==: Jede Entität im Entwurf hat eine einzige Aufgabe
+
+*Beispiel Observer Pattern*
+
+	Es gibt ein Objekt, dessen Zustandsänderungen für mehrere andere Objekte von Bedeutung sind, da diese im Falle einer Änderung ebenfalls Aktualisierungen vornehmen müssen. Die Objekte sollen aber möglichst unabhängig voneinander entwickelt werden.
+
+- Single Responsibility Principle
+- Verantwortlichkeiten
+	- Modell: Fachliche Klassen: Daten und Logik („Subjekt“, „Observable“)
+	- Ansicht: Darstellung der Daten („Observer“)
+- Abhängigkeiten
+	- Ansicht muss auf Modell zugreifen 
+	- Modell kann unanbhängig von Ansicht entwickelt werden
+	- vers. GUIs können auf selbem Modell arbeiten und vers. Aspekte darstellen
+
+![[Pasted image 20260427121718.png]]
+
+- Subject bietet Abonenntendienst an, bei dem sich Observer an- und abmelden können
+- Subject schickt Benachrichtigung an alle Abonennten bei Änderungen
+
+**Beispiel Observer Pattern in Java**
+
+```java
+public interface Subject { 
+	public void registerObserver(Observer o); 
+	public void removeObserver(Observer o); 
+	public void notifyObserver(); 
+}
+
+public interface Observer { 
+	public void update(float temp, float humidity, float pressure); 
+}
+```
+
+*Wetterdaten Beispiel*
+
+```java
+public class WeatherData implements Subject { 
+	
+	private List<Observer> observers; 
+	private float pressure; 
+	private float temperature; 
+	private float humidity; 
+	
+	public WeatherData() { 
+		observers = new ArrayList<>(); 
+	} 
+	
+	@Override 
+	public void registerObserver(Observer o) { 
+		observers.add(o); 
+	} 
+	
+	@Override 
+	public void removeObserver(Observer o) { 
+		observers.remove(o); 
+	}
+	
+	@Override public void notifyObserver() { 
+		for (Observer obs : observers) { 
+			obs.update(temperature, humidity, pressure); 
+			} 
+	} 
+	
+	public void setMeasurements(float tmp, float hum, float pres) { 
+		this.temperature = tmp; 
+		this.humidity = hum; 
+		this.pressure = pres; 
+		notifyObserver(); 
+	}
+}
+```
+
+```java
+public class WeatherStation extends Application{ 
+	
+	public static void main(String[] args) { 
+		launch(args); 
+	} 
+	
+	@Override 
+	public void start(Stage primaryStage) { 
+		WeatherData data = new WeatherData(); 
+		new TextWeatherDisplay(data); 
+		new GUIWeatherDisplay(data,primaryStage); 
+		for (int i = 0; i < 10; i++) { 
+			delay(1000*i, data, 20+i,50*i%100,1025+2*i); 
+		} 
+	}
+	
+	public void delay(long m, WeatherData data, float f1, float f2, float f3) { 
+		Task<Void> sleeper = new Task<Void>() { 
+		
+		@Override 
+		protected Void call() throws Exception { 
+			try { 
+				Thread.sleep(m); 
+				} catch (InterruptedException e) { 
+				} 
+				return null; 
+			} 
+		}; 
+		
+		sleeper.setOnSucceeded(new EventHandler<WorkerStateEvent>() { 
+			@Override 
+			public void handle(WorkerStateEvent event) { 
+				data.setMeasurements(f1,f2,f3); 
+			} 
+		}); 
+		
+		new Thread(sleeper).start(); 
+	} 
+}
+```
+
+---
+### Model-View-Controller (MVC)
+
+- Aufteilung des Codes in: 
+	- allgemeinen, oberflächen-unabhängigen Teil -> ==Modell== 
+	- oberflächenspezifischen Teil -> ==View==
+
+==Keine JavaFX Importe im Modell!===
+
+**Abhängigkeiten:**
+
+- View zeigt nur geeignete Sicht an (Auswahl der Daten des Modells)
+- View agiert als Observer des Modells
+- Benutzereingaben im View lösen Ereignisse aus, die der Controller behandelt 
+- Controller veranlasst Änderungen am Modell
+- Controller dient als Schnittstelle und agiert als Observer des Modells
+
+![[Pasted image 20260427123911.png]]
+
+---
+#### Variante 1 - Model-View-Presenter:
+
+- stärkere Trennung von View und Modell
+- View wird nur über Presenter aktualisiert
+
+![[Pasted image 20260427124107.png]]
+
+#### Variante 2 - Model-View-ViewModel
+
+![[Pasted image 20260427124157.png]]
+
+- View und ViewModel müssen stehts synchron gehalten werden
+- unabhängige Entwicklung von View (ohne Logik) und ViewModel (ohne Design)
+---
+## Properties
+
+	Wrapper Klassen um normale Java-Datentypen
+
+- IntegerProperty, StringProperty, BooleanProperty -> generische ObjectProperty
+- erlauben Observer-Mechanismus über die Registrierung von Listenern, mit denen eine Reaktion auf eine Wertänderung einer Property festgelegt werden kann
+- ermöglichen Synchronisation über Bindungen 
+- können Events aussenden, wenn Werte sich ändern -> Event-Handler verknüpfbar
+
+**JavaFX-Controls**
+
+- Eigenschaften als Properties vorhanden
+-> bspw. von TextField, Label usw.
+	textProperty(): StringProperty
+	disableProperty(): BooleanProperty 
+	rotateProperty(): DoubleProperty
+
+---
+### Properties definieren
+
+- Ersetzung primitiver Datentyp durch zugehörige Property  
+- get- und set-Methode für den gekapselten Wert / Objekt definieren
+- get-Methode für die Property selbst definieren (Namenskonvention)
+
+```java
+public class Raum { 
+	
+	private DoubleProperty temp = new SimpleDoubleProperty(); 
+	
+	public double getTemp() {
+		return temp.get(); 
+	} 
+	
+	public void setTemp(double temp) { 
+		this.temp.set(temp); 
+	} 
+	
+	public DoubleProperty tempProperty() { 
+		return this.temp; 
+	}
+}
+```
+
+---
+### Listener
+
+- lassen sich an Properties registrieren
+- lösen Reaktionen auf Änderungen aus (Observer-Prinzip)
+- anonyme innere Klasse
+
+```java
+raum.tempProperty().addListener(new ChangeListener<Object>() { 
+	@Override 
+	public void changed(ObservableValue<?> wert, Object alt, Object neu) 
+	{ // reagiert auf Temperaturänderung 
+	}
+}); 
+```
+
+---
+
+-> Beispiel siehe [[Prog_11_JavaFX.pdf]]
+
+---
+### Bindungen
+
+- Properties können aneinander gebunden werden "==PropertyBinding=="
+- ermöglicht Synchronisation von Werten ohne Listener
+- Unidirektional (a hat Einfluss auf b aber nicht andersherum) oder Driektional (a und b haben Einfluss aufeinander) möglich
+
+**Beispiel Bruttorechner**
+
+```java
+public class BruttoRechnerViewModel { 
+
+public BruttoRechnerViewModel(BruttoRechnerView view) { 
+view.bruttoLabel.disableProperty().bind(view.nettoInput.textProperty().isEmpty()); 
+view.bruttoOutput.disableProperty().bind(view.nettoInput.textProperty().isEmpty()); 
+
+StringConverter<Double> converter = new StringConverter<Double>() { 
+
+@Override 
+public Double fromString(String arg0) { 
+	Double d = 0d; 
+	try { 
+		d = Double.valueOf(arg0); 
+	} catch (Exception e) { 
+	} 
+	return d; 
+} 
+@Override 
+public String toString(Double arg0) { 
+	if (arg0 == null) { 
+		return ""; 
+	} 
+	return arg0.toString(); 
+}
+};
+ 
+TextFormatter<Double> formatter = new TextFormatter<Double>(converter); 
+view.nettoInput.setTextFormatter(formatter); 
+DoubleProperty nettoprop = new SimpleDoubleProperty(); nettoprop.bind(formatter.valueProperty()); 
+DoubleProperty taxprop = new SimpleDoubleProperty(); taxprop.bind(view.cbUmsatzsteuer.valueProperty()); 
+NumberBinding brutto = Bindings.add(nettoprop,Bindings.multiply(nettoprop, taxprop).divide(100)); 
+view.bruttoOutput.textProperty().bind(brutto.asString()); 
+
+} 
+}
+```
+
+![[Pasted image 20260427131320.png]]
