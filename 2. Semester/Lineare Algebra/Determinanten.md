@@ -180,6 +180,7 @@ Bestimmung der Adjunkten von $a_{ij}$:
 ---
 ### Berechnung der Inversen mit der Adjunkten einer Matrix
 
+---
 **Adjunkte einer Matrix**
 
 - Adjunkte von A $adj(A)=(A_{ij})^T$ 
@@ -190,3 +191,6 @@ Bestimmung der Adjunkten von $a_{ij}$:
 ![[Pasted image 20260429094046.png]]
 
 ---
+- gegeben: invertierbare Matrix über Körper K
+
+	$\displaystyle A^{-1}=\frac{1}{det(A)}adj(A)$ 

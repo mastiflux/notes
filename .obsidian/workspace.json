@@ -32,6 +32,18 @@
               "icon": "lucide-file-text",
               "title": "Skript-LineareAlgebra-2025-09"
             }
+          },
+          {
+            "id": "08db36f8ea2f39ed",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "2. Semester/Lineare Algebra/latexMathNotation.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "latexMathNotation"
+            }
           }
         ]
       }
@@ -209,9 +221,9 @@
   "active": "c8fbf675aa30ed3f",
   "lastOpenFiles": [
     "2. Semester/Lineare Algebra/Skript-LineareAlgebra-2025-09.pdf",
+    "2. Semester/Lineare Algebra/latexMathNotation.pdf",
     "2. Semester/Lineare Algebra/Determinanten.md",
     "Pasted image 20260429094046.png",
-    "2. Semester/Lineare Algebra/latexMathNotation.pdf",
     "Pasted image 20260429091742.png",
     "Images/Pasted image 20260429085547.png",
     "2. Semester/Betriebssysteme/BS-06V-Prozesse.pdf",
