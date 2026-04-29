@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Semester/Lineare Algebra/Determinanten.md",
+                "file": "Euklidische Vektorräume.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rückverweise auf Determinanten"
+              "title": "Rückverweise auf Euklidische Vektorräume"
             }
           },
           {
@@ -125,12 +125,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. Semester/Lineare Algebra/Determinanten.md",
+                "file": "Euklidische Vektorräume.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Ausgehende Links von Determinanten öffnen"
+              "title": "Ausgehende Links von Euklidische Vektorräume öffnen"
             }
           },
           {
@@ -168,13 +168,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Semester/Lineare Algebra/Determinanten.md",
+                "file": "Euklidische Vektorräume.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Gliederung von Determinanten"
+              "title": "Gliederung von Euklidische Vektorräume"
             }
           },
           {
@@ -208,10 +208,10 @@
   },
   "active": "16bce40ce6256a9a",
   "lastOpenFiles": [
-    "2. Semester/Lineare Algebra/Determinanten.md",
-    "Euklidische Vektorräume.md",
     "2. Semester/Lineare Algebra/Skript-LineareAlgebra-2025-09.pdf",
+    "Euklidische Vektorräume.md",
     "2. Semester/Lineare Algebra/latexMathNotation.pdf",
+    "2. Semester/Lineare Algebra/Determinanten.md",
     "2. Semester/Betriebssysteme/BS-06Ua-Prozesse.md",
     "2. Semester/Betriebssysteme/BS-06V-Prozesse.pdf",
     "2. Semester/Betriebssysteme/BS-06Ub-Scheduling.md",
