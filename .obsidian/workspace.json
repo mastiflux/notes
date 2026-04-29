@@ -8,13 +8,29 @@
         "type": "tabs",
         "children": [
           {
-            "id": "68116db3f81269b6",
+            "id": "16bce40ce6256a9a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Euklidische Vektorräume.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Neuer Tab"
+              "title": "Euklidische Vektorräume"
+            }
+          },
+          {
+            "id": "20d283e6db63a80d",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "2. Semester/Lineare Algebra/Skript-LineareAlgebra-2025-09.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Skript-LineareAlgebra-2025-09"
             }
           }
         ]
@@ -190,8 +206,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9167d905349e9bf5",
+  "active": "16bce40ce6256a9a",
   "lastOpenFiles": [
+    "2. Semester/Lineare Algebra/Determinanten.md",
+    "Euklidische Vektorräume.md",
+    "2. Semester/Lineare Algebra/Skript-LineareAlgebra-2025-09.pdf",
+    "2. Semester/Lineare Algebra/latexMathNotation.pdf",
     "2. Semester/Betriebssysteme/BS-06Ua-Prozesse.md",
     "2. Semester/Betriebssysteme/BS-06V-Prozesse.pdf",
     "2. Semester/Betriebssysteme/BS-06Ub-Scheduling.md",
@@ -199,9 +219,6 @@
     "2. Semester/Prog2/Prog_12_Threads.pdf",
     "2. Semester/Prog2/Threads.md",
     "Images/Pasted image 20260429101854.png",
-    "2. Semester/Lineare Algebra/Determinanten.md",
-    "2. Semester/Lineare Algebra/Skript-LineareAlgebra-2025-09.pdf",
-    "2. Semester/Lineare Algebra/latexMathNotation.pdf",
     "Images/Pasted image 20260429094046.png",
     "Images/Pasted image 20260429091742.png",
     "Images/Pasted image 20260429085547.png",

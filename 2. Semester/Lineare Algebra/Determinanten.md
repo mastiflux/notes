@@ -172,15 +172,15 @@ Bestimmung der Adjunkten von $a_{ij}$:
 ---
 
 1. Entwicklung nach i-ter Zeile
--> $det(A)=a_{i1}A_{i1}+a_{i2}A_{i2}+...\,=\sum^{n}_{j=1}{a_{ij}A_{ij}}$ 
+ $$det(A)=a_{i1}A_{i1}+a_{i2}A_{i2}+...\,=\sum^{n}_{j=1}{a_{ij}A_{ij}}$$ 
 
 2. Entwicklung nach j-ter Spalte
--> $det(A)=a_{j1}A_{j1}+a_{j2}A_{j2}+...\,=\sum^n_{i=1}{a_{ij}A_{ij}}$ 
+
+$$det(A)=a_{j1}A_{j1}+a_{j2}A_{j2}+...\,=\sum^n_{i=1}{a_{ij}A_{ij}}$$ 
 
 ---
 ### Berechnung der Inversen mit der Adjunkten einer Matrix
 
----
 **Adjunkte einer Matrix**
 
 - Adjunkte von A $adj(A)=(A_{ij})^T$ 
@@ -190,7 +190,21 @@ Bestimmung der Adjunkten von $a_{ij}$:
 
 ![[Pasted image 20260429094046.png]]
 
----
 - gegeben: invertierbare Matrix über Körper K
+- ==Formel:==
 
-	$\displaystyle A^{-1}=\frac{1}{det(A)}adj(A)$ 
+$$\displaystyle A^{-1}=\frac{1}{det(A)}adj(A)$$ 
+---
+## Cramersche Regel
+
+- zum Lösen linearer Gleichungssysteme
+- gegeben: LGS mit Koeffizientenmatrix $A=(a_{ij})$ -> besitzt für $det(A)\neq0$ eine eindeutige Lösung (sonst keine oder unendlich viele)
+- Lösung brechnet sich durch:
+
+$$x_j= \frac{1}{det(A)}\,\cdot\,\begin{vmatrix} a_{11} &...& a_{1,j-1} & b_1 & a_{1, j+1} & ... & a_{1n} \\ ... &&...&...&...&&...\\a_{n1} &...&a_{n, j-1} & b_n&a_{n, j+1}&...&a_{nn}\end{vmatrix}$$
+
+- somit gilt für jede j-te Komponente:
+
+$$x_j=\frac{1}{det(A)}\,\cdot\,\sum^n_{i=1} A_{ij}b_i$$
+
+*Beispiele siehe Vorlesungsfolien und Goodnotes*
