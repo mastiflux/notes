@@ -151,11 +151,11 @@ int a = 10, b = 20;  // globale Variablen
 
 int main(void) {
     pid_t pid;
-
+	
     printf("Vor fork:         a = %d, b = %d\n", a, b);
-
+	
     pid = fork();
-
+	
     if (pid == 0) {
         /* === Kindprozess === */
         printf("Kind  (t=0s):     a = %d, b = %d\n", a, b);
