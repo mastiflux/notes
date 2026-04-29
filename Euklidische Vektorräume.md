@@ -36,4 +36,14 @@ Norm/Länge/Betrag von x: $$||x||=\sqrt{x^T\cdot\,x}$$
 
 *Beispiel siehe Vorlesungsfolien und Goodnotes*
 
+- Euklidischer Raum $\mathbb R^n:$
+$$||x||=\sqrt{\sum^n_{i=1}x^2_i}$$ 
+- für n = 1: Betrag einer Zahl
+- für n = 2: Satz des Pythagoras
+- für n = 3: Länge eines Ortsvektors *x* in einem kartesischen Koordinatensystem
+- für kanonischen Einheitsvektor: $||e_i||=1$ für $i=1,...,n$
 
+---
+ **Cauchy-Schwarzsche Ungleichung**
+
+$$|x^T\cdot y|\leq ||x||\cdot||y||$$

@@ -32,6 +32,18 @@
               "icon": "lucide-file-text",
               "title": "Skript-LineareAlgebra-2025-09"
             }
+          },
+          {
+            "id": "9e46e4f1908be8ff",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "2. Semester/Lineare Algebra/latexMathNotation.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "latexMathNotation"
+            }
           }
         ]
       }
@@ -208,9 +220,9 @@
   },
   "active": "16bce40ce6256a9a",
   "lastOpenFiles": [
+    "2. Semester/Lineare Algebra/latexMathNotation.pdf",
     "2. Semester/Lineare Algebra/Skript-LineareAlgebra-2025-09.pdf",
     "Euklidische Vektorräume.md",
-    "2. Semester/Lineare Algebra/latexMathNotation.pdf",
     "2. Semester/Lineare Algebra/Determinanten.md",
     "2. Semester/Betriebssysteme/BS-06Ua-Prozesse.md",
     "2. Semester/Betriebssysteme/BS-06V-Prozesse.pdf",
