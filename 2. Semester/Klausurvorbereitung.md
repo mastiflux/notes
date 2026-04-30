@@ -19,3 +19,9 @@
 ## Datenbanken
 
 - SQL Synatx!
+
+---
+## Betriebssysteme
+
+- C
+- Scheduling Rechnungen
