@@ -13,6 +13,7 @@ _Beispiel CDs:_
 -> es kann nicht nach Liedern gesucht werden -> mehrere daten in einer Spalte
 -> aufwendig, Daten zu verändern
 
+---
 ## Die erste Normalform
 
 - für jedes Mehrfachattribut wird eine neue Zeile erzeugt
@@ -25,12 +26,14 @@ Nachteile:
 - Erzeugung von vielen Redundanzen
 - Speicheraufwand sehr groß
 
+---
 ## Die zweite Normalform
 
 **Eine Relation ist in der zweiten Normalform, wenn die sich in der ersten Normalform befindet und falls jedes nicht-Schlüsselattribut der Relation voll funktional abhängig von jedem Schlüsselkandidaten der Relation ist.
 
 - Zerlegung der Tabellen, bis Definition zutrifft
 
+---
 ## Die dritte Normalform
 
 **Eine Relation ist in der dritten Normalform, wenn sie in der zweiten Normalform ist und kein nicht-Schlüsselelement funktional abhängig von einem anderen nicht-Schlüsselelement ist.**

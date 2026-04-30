@@ -31,7 +31,8 @@ Bestimmen Sie für jeden Prozess $P_{base} + P_{nice,j}$ (Sie benötigen nur die
 |    12    |       B        |   68    |     57      |       L        |   48    |     16      |       B        |   63    |     26      |
 
 > **Formeln:**
-> $P_j^i = P_{base} + P_{nice,j} + \dfrac{T_{CPU,j}(i)}{2}$ &nbsp;&nbsp; und &nbsp;&nbsp; $T_{CPU,j}^i = \dfrac{T_{CPU,j}(i-1)}{2}$
+> $P_j^i = P_{base} + P_{nice,j} + \dfrac{T_{CPU,j}(i)}{2}$ 
+> $T_{CPU,j}^i = \dfrac{T_{CPU,j}(i-1)}{2}$
 
 ---
 
