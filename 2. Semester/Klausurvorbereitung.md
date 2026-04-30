@@ -14,4 +14,8 @@
 ## Prog2
 
 - Generics!!!
-- 
+
+---
+## Datenbanken
+
+- SQL Synatx!
