@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "cdc30865506bf518",
+        "id": "c587befb9cb083bc",
         "type": "tabs",
         "children": [
           {
-            "id": "703f9f8d43014277",
+            "id": "4585e7f5e812e87f",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "2. Semester/UML/06.SC_plantuml.pdf"
+                "file": "2. Semester/Prog2/Prog2_Testat1_Notizen.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "06.SC_plantuml"
+              "icon": "lucide-file",
+              "title": "Prog2_Testat1_Notizen"
             }
           }
         ]
@@ -192,10 +194,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "703f9f8d43014277",
+  "active": "4585e7f5e812e87f",
   "lastOpenFiles": [
-    "2. Semester/UML/State Charts.md",
+    "2. Semester/Prog2/Prog2 Testat1 Notizen.md",
+    "2. Semester/Prog2/Prog2_Testat1_Notizen.md",
+    "2. Semester/Prog2/JavaFX.md",
+    "2. Semester/Prog2/Prog_03_Enumerations.pdf",
+    "2. Semester/Prog2/Prog_02_Java-API.pdf",
+    "2. Semester/Prog2/Prog_04_UML.pdf",
+    "2. Semester/Prog2/Prog_02_Java-API notes.pdf",
+    "2. Semester/AlgoDat/Hashing.md",
     "2. Semester/UML/06.SC_plantuml.pdf",
+    "2. Semester/UML/State Charts.md",
     "2. Semester/UML/07.SD.pdf",
     "2. Semester/Betriebssysteme/BS-06Ub-Scheduling.md",
     "2. Semester/Klausurvorbereitung.md",
@@ -216,16 +226,11 @@
     "Images/Pasted image 20260429085547.png",
     "Images/Pasted image 20260427152818.png",
     "Images/Pasted image 20260427150638.png",
-    "2. Semester/Prog2/JavaFX.md",
-    "2. Semester/Prog2/Prog_11_JavaFX.pdf",
     "Images/Pasted image 20260427131320.png",
     "Images/Pasted image 20260427124157.png",
     "Images/Pasted image 20260427124107.png",
     "Images/Pasted image 20260427123911.png",
-    "2. Semester/AlgoDat/16.AuD_Graphen2.pdf",
     "2. Semester/AlgoDat/Graphen.md",
-    "Modulhandbuch.pdf",
-    "2. Semester/AlgoDat/15.AuD_Fragestunde.pdf",
     "2. Semester/AlgoDat/Fragestunde Notizen.md",
     "2. Semester/Datenbanken/Übungsaufgabe 2 - Felix Häse.md",
     "2. Semester/Datenbanken/HandsOn.md",
@@ -233,12 +238,10 @@
     "2. Semester/AlgoDat/Bäume.md",
     "2. Semester/AlgoDat/Aufgaben Bäume.md",
     "2. Semester/Prog2/Modularisierung.md",
-    "2. Semester/AlgoDat/Hashing.md",
     "Unbenannt.canvas",
     "2026-04-20.md",
     "Unbenannt 1.md",
     "2. Semester/Betriebssysteme/Linux Vertiefung.md",
-    "2. Semester/Betriebssysteme/BS-03U-Geraete-C.md",
-    "README.md"
+    "2. Semester/Betriebssysteme/BS-03U-Geraete-C.md"
   ]
 }
