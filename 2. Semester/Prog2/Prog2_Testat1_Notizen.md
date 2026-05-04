@@ -236,7 +236,7 @@ public enum Planet {
 ```java
 public class Hund extends Tier {
     private String rasse;
-
+	
     public Hund(String name, String rasse) {
         super(name); // muss erste Zeile sein
         this.rasse = rasse;
