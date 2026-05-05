@@ -1,3 +1,4 @@
+# Prozesse
 
 **Ein Prozess ist ein Programm (ausführbare Datei) in Ausführung.**
 
@@ -349,5 +350,123 @@ Beispiel siehe [[BS-06V-Prozesse.pdf]]
 	- $T_s$ Service Time: Rechenzeit
 	- $T_c$ Completion Time: Zeitpunkt, zu dem der Prozess beendet wird
 	- $T_r$ Turnaround Time: $T_c - T_a$ (normalisiert: $T_r\div T_s$)
+
+---
+# Interprozesskommunikation
+
+## Nebenläufigkeit und kritische Abschnitte
+
+**Nebenläufigkeit** bezeichnet parallele oder quasi-parallele Ausführung von Programmen.
+
+- keine echte Parallelität nötig -> präemptives Umschalten reicht aus
+- realisiert durch mehrere Prozesse und/oder Threads
+- man muss mit jeder möglichen Verzahnung der Ausführungsstränge rechnen
+---
+*Beispiel:*
+
+![[Pasted image 20260504142554.png]]
+
+![[Pasted image 20260504142617.png]]
+
+- Abschnitt in Thread A vollständig durchlaufen, dann B
+-> counter = 2
+---
+![[Pasted image 20260504142636.png]]
+
+- Abschnitt nach Anweisung 2 unterbrochen
+-> counter = 1 ==Lost Update==
+---
+
+### Atomare Anweisungen
+
+- unteilbare Anweisung
+- können nicht unterbrochen werden
+- meiste Assembler-Instruktionen
+- meiste Hochsprachen verbinden mehrere Assembler Befehle -> nicht atomare Anweisungen
+
+---
+**Folge von Anweisungen atomar machen?**
+
+- möglich durch globales Sperren und wieder Freischalten von Interrupts (schlecht)
+- ==Mutual Exclusion== (besser):
+	- es darf sich immer nur höchstens ein Thread/Prozess in einem kritischen Abschnitt bzgl. einer Ressource befinden
+	- andere Programmteile unproblematisch
+	- simuliert atomare Anweisungsfolge! 
+
+*Beispiel:*
+
+![[Pasted image 20260504143829.png]]
+
+---
+*Grundsätze:*
+
+1. Mutual exclusion: Zwei oder mehr Prozesse dürfen sich nicht gleichzeitig im gleichen kritischen Abschnitt befinden.
+
+2. Es dürfen keine Annahmen über die Abarbeitungsgeschwindigkeit und die Anzahl der Prozesse bzw. CPUs gemacht werden. Der kritische Abschnitt muss unabhängig davon geschützt werden.
+ 
+3. Kein Prozess außerhalb eines kritischen Abschnitts darf einen anderen nebenläufigen Prozess blockieren.
+ 
+4. Fairness Condition: Jeder Prozess, der am Eingang eines kritischen Abschnitts wartet, muss ihn irgendwann betreten dürfen. (kein ewiges Warten/Verhungern/Starvation
+---
+### Realisierung kritischer Abschnitte
+
+- mit Sperrvariablen (*Lock*)
+	- Lock = 1 -> Prozess im kritischen Abschnitt
+	- Lock = 0 -> kein Prozess im kritischen Abschnit
+	- wenn kritischer Abschnitt blockiert: Aktives Warten mit Spinlock (fragt ständig ab, braucht CPU-Zeit)
+- Prozesszustand *Blockiert* zum Warten nutzen -> relativ aufwendig, aber meist besser
+---
+
+- Abfragen und Setzen der Sperrvariablen muss atomar sein
+- spezielle Assembler Instruktionen wie *TSL* 
+	- liest Inhalt der Sperrvariablen
+	- schreibt einen Wert ungleich 0 in die Sperrvariable
+
+*Implementierung mit Spinlock*
+```ASM
+//Lock:
+
+TSL R1, LOCK
+CMP R1, #0
+JNE Lock
+RET
+
+//Unlock:
+
+MOVE LOCK, #0
+RET
+```
+
+---
+### Hauptprobleme Nebenläufigkeit
+
+- Nebenläufigkeit beherrschen schwierig
+- schwer zu reproduzieren und zu debuggen
+
+**Fehlerklassen**
+
+1. ==Race Condition:== Situation, in denen zwei oder mehr Tasks eine gemeinsame Ressource nutzen und das Endergebnis von der (generell unbekannten) zeitlichen Abfolge der Operationen abhängt 
+
+2. ==Deadlock (Verklemmung):== Zwei oder mehr Tasks warten wechselseitig aufeinander; Gegenseitige Blockade, weil beide Tasks Ressourcen besitzen, die von der jeweils anderen Task benötigt werden 
+
+3. ==Starvation (Verhungern):== Rechenbereite Task wird vom Scheduler konsequent übergangen bei unfairem Synchronisationsmechanismus
+---
+## Semaphoren
+
+- Absicherung von Ressourcen und Synchronisation von Prozessen
+- durch Betriebssystem realisierte Zählvariable
+- unterstützt zwei atomare Operationen P() und V()
+	- P()/down()/acquire(): Wenn Zähler > 0: Zähler dekrementieren, sonst Prozess blockiert, in Warteschlange einreihen
+	- V()/up()/release(): Zähler inkrementieren und ggf. Prozess aus Warteschlange wecken -> bereit
+
+*Typen:*
+
+- binäre Semaphor: nur 0 und 1 erlaubt, ideal für kritische Abschnitte
+- Zählende Semaphor: positive Zählwerte erlaubt, ermöglicht auch komplexere Use Cases
+
+==! sehr fehleranfällig !==
+siehe Fehler in:[[BS-07V-IPC.pdf]] 
+
+---
 
 

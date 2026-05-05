@@ -13,15 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Semester/Prog2/Prog2_Testat1_Notizen.md",
-                "mode": "preview",
+                "file": "2. Semester/Betriebssysteme/Prozesse.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Prog2_Testat1_Notizen"
+              "title": "Prozesse"
+            }
+          },
+          {
+            "id": "c593a63a772eb2f7",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "2. Semester/Betriebssysteme/BS-07V-IPC.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "BS-07V-IPC"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -194,12 +207,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4585e7f5e812e87f",
+  "active": "c593a63a772eb2f7",
   "lastOpenFiles": [
+    "2. Semester/Betriebssysteme/Prozesse.md",
+    "2. Semester/Betriebssysteme/BS-07V-IPC.pdf",
+    "Pasted image 20260504143829.png",
+    "Images/Pasted image 20260504142636.png",
+    "Images/Pasted image 20260504142617.png",
+    "Images/Pasted image 20260504142554.png",
+    "2. Semester/Prog2/Prog2_Testat1_Notizen.md",
     "2. Semester/Prog2/Prog_03_Enumerations.pdf",
     "2. Semester/Prog2/Prog_02_Java-API notes.pdf",
     "2. Semester/Prog2/Prog_02_Java-API.pdf",
-    "2. Semester/Prog2/Prog2_Testat1_Notizen.md",
     "2. Semester/Prog2/Prog2 Testat1 Notizen.md",
     "2. Semester/Prog2/JavaFX.md",
     "2. Semester/Prog2/Prog_04_UML.pdf",
@@ -217,8 +236,6 @@
     "2. Semester/Lineare Algebra/Determinanten.md",
     "2. Semester/Betriebssysteme/BS-06Ua-Prozesse.md",
     "2. Semester/Betriebssysteme/BS-06V-Prozesse.pdf",
-    "2. Semester/Betriebssysteme/Prozesse.md",
-    "2. Semester/Prog2/Prog_12_Threads.pdf",
     "2. Semester/Prog2/Threads.md",
     "Images/Pasted image 20260429101854.png",
     "Images/Pasted image 20260429094046.png",
@@ -226,10 +243,6 @@
     "Images/Pasted image 20260429085547.png",
     "Images/Pasted image 20260427152818.png",
     "Images/Pasted image 20260427150638.png",
-    "Images/Pasted image 20260427131320.png",
-    "Images/Pasted image 20260427124157.png",
-    "Images/Pasted image 20260427124107.png",
-    "Images/Pasted image 20260427123911.png",
     "2. Semester/AlgoDat/Graphen.md",
     "2. Semester/AlgoDat/Fragestunde Notizen.md",
     "2. Semester/Datenbanken/Übungsaufgabe 2 - Felix Häse.md",
