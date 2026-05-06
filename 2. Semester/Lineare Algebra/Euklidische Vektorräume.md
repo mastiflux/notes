@@ -86,3 +86,17 @@ $$x^T\cdot y= 0$$
 ***=> Für jeden beliebigen Vektor $x\in V$ ($V$ ist ONS) gilt:*** 
 $$\displaystyle x=(x^T\cdot v_1)v_1+(x^T\cdot v_2)v_2+...(x^T\cdot v_n)v_n$$ 
 ---
+### Zerlegung von Vektoren, Projektion
+
+- Betrachtung: zwei Vektoren $x$ und $y$, die Winkel $\alpha\neq0$ einschließen
+
+![[Pasted image 20260506142913.png|503]]
+
+Zerlegung: $$y = y_{||} + y_{\perp}$$
+Norm von $y_{||}$: $$||y_{||}||=||y||\cdot cos(\alpha)=\frac{1}{||x||}\cdot x^T\cdot y$$
+Richtung: $$\frac{1}{||x||}\cdot x^T\cdot y$$
+Länge: $$y_{||}=\frac{x^T\cdot y}{||x||^2}\cdot x$$
+
+---
+## Vektorprodukt und Spatprodukt im $\mathbb R^3$
+

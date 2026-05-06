@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4585e7f5e812e87f",
+            "id": "84f59c5928781e1d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "84f59c5928781e1d",
+            "id": "b616b17946b6ee19",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -206,11 +206,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4585e7f5e812e87f",
+  "active": "84f59c5928781e1d",
   "lastOpenFiles": [
     "2. Semester/Lineare Algebra/Skript-LineareAlgebra-2025-09.pdf",
     "2. Semester/Lineare Algebra/Euklidische Vektorräume.md",
     "2. Semester/Lineare Algebra/latexMathNotation.pdf",
+    "Images/Pasted image 20260506142913.png",
+    "2. Semester/Prog2/Prog_12_Threads.pdf",
+    "2. Semester/Betriebssysteme/BS-07Ua-IPC.md",
     "2. Semester/Klausurvorbereitung.md",
     "2. Semester/Lineare Algebra/LineareAlgebra-2026-04-15.pdf",
     "2. Semester/AlgoDat/Hashing.md",
@@ -220,13 +223,12 @@
     "2. Semester/AlgoDat/16.AuD_Graphen2.pdf",
     "2. Semester/Betriebssysteme/BS-07V-IPC.pdf",
     "2. Semester/Betriebssysteme/Prozesse.md",
-    "Pasted image 20260504143829.png",
+    "Images/Pasted image 20260504143829.png",
     "Images/Pasted image 20260504142636.png",
     "Images/Pasted image 20260504142617.png",
     "Images/Pasted image 20260504142554.png",
     "2. Semester/Prog2/Prog2_Testat1_Notizen.md",
     "2. Semester/Prog2/Prog_03_Enumerations.pdf",
-    "2. Semester/Prog2/Prog_02_Java-API notes.pdf",
     "2. Semester/Prog2/Prog2 Testat1 Notizen.md",
     "2. Semester/Prog2/JavaFX.md",
     "2. Semester/UML/State Charts.md",
@@ -241,7 +243,6 @@
     "Images/Pasted image 20260429091742.png",
     "Images/Pasted image 20260429085547.png",
     "Images/Pasted image 20260427152818.png",
-    "Images/Pasted image 20260427150638.png",
     "2. Semester/AlgoDat/Graphen.md",
     "2. Semester/AlgoDat/Fragestunde Notizen.md",
     "2. Semester/Datenbanken/Übungsaufgabe 2 - Felix Häse.md",
@@ -252,7 +253,6 @@
     "2. Semester/Prog2/Modularisierung.md",
     "Unbenannt.canvas",
     "2026-04-20.md",
-    "Unbenannt 1.md",
-    "2. Semester/Betriebssysteme/Linux Vertiefung.md"
+    "Unbenannt 1.md"
   ]
 }
