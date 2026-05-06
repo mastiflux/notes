@@ -100,3 +100,24 @@ Länge: $$y_{||}=\frac{x^T\cdot y}{||x||^2}\cdot x$$
 ---
 ## Vektorprodukt und Spatprodukt im $\mathbb R^3$
 
+Definition: Das Vektorprodukt zweier Vektoren $a\times b$ wird definiert als:
+
+$$a\times b = \begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix}\times \begin{pmatrix}b_1\\b_2\\b_3\end{pmatrix}=\begin{pmatrix}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{pmatrix}$$
+**Eigenschaften des Vektorprodukts:**
+
+1. $a\times b$ ist orthogonal zu $a$ und $b$
+2. $a\times b=-(b\times a)$ 
+3. $a\times a =o$
+4. Distributivität ist erfüllt
+5. Vektorprodukt dreier Vektoren: $a\times(b\times c)=b\cdot(a^T\cdot c)-c\cdot (a^T\cdot b)$ 
+6. $a,b$ und $a\times b$ bilden ein Rechtssystem
+7. Norm von $a\times b$ entspricht Flächeninhalt des von $a$ und $b$ aufgespannten Parallelogramm $$||a\times b||=||a||\cdot||b||\cdot sin(\alpha)$$
+
+---
+
+**Spatprodukt**
+
+Definition ($a,b,c\in \mathbb R^3$):
+$$(a\times b)^T\cdot c$$
+
+Berechnung mithilfe folgender Determinante: $$(a\times b)^T\cdot c=\begin{vmatrix}a_1&a_2&a_3\\b_1&b_2&b_3\\c_1&c_2&c_3\end{vmatrix}$$
