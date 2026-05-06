@@ -83,4 +83,6 @@ $$x^T\cdot y= 0$$
 
 ***=> Die Vektoren jedes Orthogonalsystems sind linear unanbhängig!*** (Nachweis siehe Skript)
 
+***=> Für jeden beliebigen Vektor $x\in V$ ($V$ ist ONS) gilt:*** 
+$$\displaystyle x=(x^T\cdot v_1)v_1+(x^T\cdot v_2)v_2+...(x^T\cdot v_n)v_n$$ 
 ---

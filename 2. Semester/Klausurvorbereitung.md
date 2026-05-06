@@ -3,7 +3,7 @@
 - Untervektorräume wdh
 - Dimension, Rang Abbildungsmatrix 
 - Kern von Abbildungen
-
+- 
 ---
 ## AlgoDat
 
