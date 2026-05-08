@@ -197,6 +197,8 @@ EXPLAIN tbl_name [\G];
 TINYINT [(M)] [UNSIGNED]
 ```
 
+![[Pasted image 20260508104249.png]]
+
 ---
 ## Reelle Zahlen
 
@@ -208,6 +210,11 @@ TINYINT [(M)] [UNSIGNED]
 ```sql
 DECIMAL [(M,D)] [UNSIGNED]
 ```
+
+*Beispiel: DECIMAL (5,2)*
+![[Pasted image 20260508104357.png]]
+
+![[Pasted image 20260508104431.png]]
 
 ---
 ## Text 
@@ -232,6 +239,9 @@ CHAR [(M)] [BINARY] [CHARCTER SET charset_name] [COLLATE collation_name]
 **Beispiel ENUM**
 - ermöglicht Angabe einer Liste vordefinierter Strings
 
+![[Pasted image 20260508104507.png]]
+![[Pasted image 20260508104534.png]]
+
 ---
 ## Zeitangaben
 
@@ -240,6 +250,8 @@ CHAR [(M)] [BINARY] [CHARCTER SET charset_name] [COLLATE collation_name]
 - Plausibilität wird geprüft
 - wenn dd = 00 -> ganzer Monat wird gespeichert
 - wenn dd, m = 00 -> ganzes Jahr wird gespeichert
+
+![[Pasted image 20260508104612.png]]
 
 ---
 # Daten verwalten
@@ -255,6 +267,4 @@ INTO tbl_name[(col_name,...)]
 VALUES (newValues|DEFAULT);
 ```
 
-## SELECT
 
-- Daten auswählen und verwenden
