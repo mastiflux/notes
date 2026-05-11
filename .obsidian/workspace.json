@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9b9fd0c1dfde6d68",
+        "id": "0a3adf33022e0ce8",
         "type": "tabs",
         "children": [
           {
-            "id": "2cbc20ba8f73e4d3",
+            "id": "3fac2a70b7a7e6e8",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "2. Semester/AlgoDat/18.AuD_Design.pdf"
+                "file": "2. Semester/Betriebssysteme/BS-09V-Speicherverwaltung.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "18.AuD_Design"
+              "title": "BS-09V-Speicherverwaltung"
             }
           }
         ]
@@ -192,11 +192,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2cbc20ba8f73e4d3",
+  "active": "3fac2a70b7a7e6e8",
   "lastOpenFiles": [
+    "2. Semester/Betriebssysteme/Prozesse.md",
+    "2. Semester/Betriebssysteme/BS-09V-Speicherverwaltung.pdf",
+    "2. Semester/Betriebssysteme/BS-07V-IPC.pdf",
+    "2. Semester/Prog2/Prog_13_Lambdas_und_Streams.pdf",
+    "2. Semester/AlgoDat/18.AuD_Design.pdf",
     "2. Semester/AlgoDat/Graphen.md",
     "2. Semester/AlgoDat/Design.md",
-    "2. Semester/AlgoDat/18.AuD_Design.pdf",
     "2. Semester/AlgoDat/17.AuD_Graphen3.pdf",
     "Images/Pasted image 20260511100841.png",
     "Images/Pasted image 20260511100806.png",
@@ -213,7 +217,6 @@
     "2. Semester/Prog2/JavaFX.md",
     "2. Semester/Prog2/Threads.md",
     "2. Semester/Datenbanken/SQL.md",
-    "2. Semester/Betriebssysteme/Prozesse.md",
     "2. Semester/Betriebssysteme/BS-07Ua-IPC.md",
     "2. Semester/Betriebssysteme/BS-07Ua-IPC(1).odt",
     "2. Semester/Betriebssysteme/lu229094sq0p.tmp",
@@ -222,9 +225,6 @@
     "2. Semester/UML/State Charts.md",
     "2. Semester/Lineare Algebra/Skript-LineareAlgebra-2025-09.pdf",
     "2. Semester/Lineare Algebra/Euklidische Vektorräume.md",
-    "2. Semester/Lineare Algebra/latexMathNotation.pdf",
-    "2. Semester/Prog2/Prog_12_Threads.pdf",
-    "2. Semester/Lineare Algebra/LineareAlgebra-2026-04-15.pdf",
     "2. Semester/AlgoDat/Hashing.md",
     "2. Semester/Prog2/Prog2_Testat1_Notizen.md",
     "2. Semester/Prog2/Prog2 Testat1 Notizen.md",
