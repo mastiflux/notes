@@ -18,20 +18,6 @@
               "icon": "lucide-file-text",
               "title": "18.AuD_Design"
             }
-          },
-          {
-            "id": "b1442612bbf623ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. Semester/AlgoDat/Design.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Design"
-            }
           }
         ]
       }
@@ -208,9 +194,10 @@
   },
   "active": "2cbc20ba8f73e4d3",
   "lastOpenFiles": [
-    "2. Semester/AlgoDat/17.AuD_Graphen3.pdf",
-    "2. Semester/AlgoDat/Design.md",
     "2. Semester/AlgoDat/Graphen.md",
+    "2. Semester/AlgoDat/Design.md",
+    "2. Semester/AlgoDat/18.AuD_Design.pdf",
+    "2. Semester/AlgoDat/17.AuD_Graphen3.pdf",
     "Images/Pasted image 20260511100841.png",
     "Images/Pasted image 20260511100806.png",
     "Images/Pasted image 20260511094158.png",
@@ -221,7 +208,6 @@
     "Images/Pasted image 20260511090316.png",
     "Images/Pasted image 20260511090244.png",
     "Images/Pasted image 20260511085923.png",
-    "2. Semester/AlgoDat/18.AuD_Design.pdf",
     "2. Semester/Prog2/Prog_08_Generics.pdf",
     "2. Semester/Prog2/Modularisierung.md",
     "2. Semester/Prog2/JavaFX.md",
