@@ -429,3 +429,55 @@ Q = < (v: 9) >
 ![[Pasted image 20260511091523.png]]
 
 A=0, B=2, C=7, D=6, E=10, F=3, G=5, H=9, I=7, J=6, K=10
+
+---
+### A*-Algorithmus
+
+- g(u): bisher berechnete Kosten vom Startpunkt zu u
+- h(u): geschätzte minimale Kosten von u zum Ziel
+	- h für Heuristik
+	- sollte leicht zu berechnen sein
+	- h(u)<=d(u)
+	- h(u)<=h(v)+$\gamma$(u,v)
+- f(u)=g(u)+h(u)
+
+- OPEN: Liste aller Knoten, zu denen ein Weg gefunden wurde (mit f-Werten)
+	- Operationen: create, contains, enqueue, extractMinimal, isEmpty
+- CLOSED: Knoten, zu denen der kürzeste Weg gefunden wurde
+- jeder Knoten: 
+	- h(u) Konstante 
+	- π(u) Zeiger zum aktuellen Vorgänger
+	- g(u) wird berechnet
+
+![[Pasted image 20260511094158.png]]
+
+*Ablauf:*
+- Startknoten in OPEN Liste eintragen
+- solange OPEN nicht leer und Ziel nicht erreicht ist:
+	- Knoten mit kleinstem f in OPEN wählen
+	- u = Ziel: fertig
+	- Nachbarn von u und v betrachten: 
+		- v schon in CLOSED: ignorieren
+		- f-Wert bei Weg über u und v berechnen (wenn schon besser vorhanden -> ignorieren, sonst v in OPEN eintragen und f und g aktualisieren)
+	- u aus OPEN in CLOSED transferieren
+
+Beispiel siehe Vorlesungsfolien mit Notizen
+
+---
+### Bellman-Ford-Algorithmus
+
+- geht auch mit negativen $\gamma(u,v)$ 
+
+![[Pasted image 20260511100806.png]]
+
+*Beispiel:*
+![[Pasted image 20260511100841.png]]
+
+| Iteration | 0        | 1                     | 2   | 3   |
+| --------- | -------- | --------------------- | --- | --- |
+| A         | 0        | 0                     | 0   | 0   |
+| B         | $\infty$ | 3                     | 3   | 3   |
+| C         | $\infty$ | $\infty+6$            | 9   | 9   |
+| D         | $\infty$ | $\infty+5,\,\infty-2$ | 8,7 | 7   |
+
+---
