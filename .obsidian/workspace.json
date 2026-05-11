@@ -33,7 +33,8 @@
               "title": "Graphen"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,15 +207,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2cbc20ba8f73e4d3",
+  "active": "9167d905349e9bf5",
   "lastOpenFiles": [
-    "2. Semester/AlgoDat/Graphen.md",
+    "Images/Pasted image 20260511091523.png",
     "2. Semester/AlgoDat/17.AuD_Graphen3.pdf",
-    "Pasted image 20260511090425.png",
-    "Pasted image 20260511090352.png",
-    "Pasted image 20260511090333.png",
-    "Pasted image 20260511090316.png",
-    "Pasted image 20260511090244.png",
+    "2. Semester/AlgoDat/Graphen.md",
+    "Images/Pasted image 20260511090425.png",
+    "Images/Pasted image 20260511090352.png",
+    "Images/Pasted image 20260511090333.png",
+    "Images/Pasted image 20260511090316.png",
+    "Images/Pasted image 20260511090244.png",
     "Images/Pasted image 20260511085923.png",
     "Images/Pasted image 20260511085413.png",
     "Images/Pasted image 20260511085350.png",
