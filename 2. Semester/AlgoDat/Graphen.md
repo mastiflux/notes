@@ -470,8 +470,10 @@ Beispiel siehe Vorlesungsfolien mit Notizen
 
 ![[Pasted image 20260511100806.png]]
 
-*Beispiel:*
+==Beispiel:==
 ![[Pasted image 20260511100841.png]]
+
+*besuche Kanten in der Reihenfolge a,b,c,d*
 
 | Iteration | 0        | 1                     | 2   | 3   |
 | --------- | -------- | --------------------- | --- | --- |
