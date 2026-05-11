@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0a3adf33022e0ce8",
+        "id": "ef83ea3eaa8966bf",
         "type": "tabs",
         "children": [
           {
-            "id": "3fac2a70b7a7e6e8",
+            "id": "c34f92267fe9700b",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "2. Semester/Betriebssysteme/BS-09V-Speicherverwaltung.pdf"
+                "file": "2. Semester/Prog2/lernzettel_prog2.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "BS-09V-Speicherverwaltung"
+              "icon": "lucide-file",
+              "title": "lernzettel_prog2"
             }
           }
         ]
@@ -192,16 +194,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3fac2a70b7a7e6e8",
+  "active": "c34f92267fe9700b",
   "lastOpenFiles": [
-    "2. Semester/Betriebssysteme/Prozesse.md",
+    "2. Semester/Prog2/Prog_12_Threads.pdf",
+    "2. Semester/Prog2/lernzettel_prog2.md",
+    "2. Semester/Prog2/Prog_07_Exceptions.pdf",
+    "2. Semester/Prog2/Prog_11_JavaFX.pdf",
+    "2. Semester/Prog2/Prog_10_Modularisierung.pdf",
+    "2. Semester/Prog2/Prog_09_Collections.pdf",
+    "2. Semester/Prog2/Prog_08_Generics.pdf",
+    "2. Semester/Prog2/Prog_06_Vererbung.pdf",
+    "2. Semester/Prog2/Prog_04_UML.pdf",
+    "2. Semester/AlgoDat/04.AuD_Sortieren.pdf",
+    "2. Semester/AlgoDat/Klausurvorbereitung AuD.md",
     "2. Semester/Betriebssysteme/BS-09V-Speicherverwaltung.pdf",
+    "2. Semester/Betriebssysteme/Prozesse.md",
     "2. Semester/Betriebssysteme/BS-07V-IPC.pdf",
-    "2. Semester/Prog2/Prog_13_Lambdas_und_Streams.pdf",
-    "2. Semester/AlgoDat/18.AuD_Design.pdf",
     "2. Semester/AlgoDat/Graphen.md",
     "2. Semester/AlgoDat/Design.md",
-    "2. Semester/AlgoDat/17.AuD_Graphen3.pdf",
     "Images/Pasted image 20260511100841.png",
     "Images/Pasted image 20260511100806.png",
     "Images/Pasted image 20260511094158.png",
@@ -212,18 +222,13 @@
     "Images/Pasted image 20260511090316.png",
     "Images/Pasted image 20260511090244.png",
     "Images/Pasted image 20260511085923.png",
-    "2. Semester/Prog2/Prog_08_Generics.pdf",
     "2. Semester/Prog2/Modularisierung.md",
     "2. Semester/Prog2/JavaFX.md",
     "2. Semester/Prog2/Threads.md",
     "2. Semester/Datenbanken/SQL.md",
     "2. Semester/Betriebssysteme/BS-07Ua-IPC.md",
-    "2. Semester/Betriebssysteme/BS-07Ua-IPC(1).odt",
-    "2. Semester/Betriebssysteme/lu229094sq0p.tmp",
     "2. Semester/Klausurvorbereitung.md",
-    "2. Semester/UML/07.SD.pdf",
     "2. Semester/UML/State Charts.md",
-    "2. Semester/Lineare Algebra/Skript-LineareAlgebra-2025-09.pdf",
     "2. Semester/Lineare Algebra/Euklidische Vektorräume.md",
     "2. Semester/AlgoDat/Hashing.md",
     "2. Semester/Prog2/Prog2_Testat1_Notizen.md",
@@ -237,8 +242,6 @@
     "2. Semester/Datenbanken/HandsOn.md",
     "2. Semester/Lineare Algebra/Lineare Gleichungssysteme.md",
     "2. Semester/AlgoDat/Bäume.md",
-    "2. Semester/AlgoDat/Aufgaben Bäume.md",
-    "Unbenannt.canvas",
-    "2026-04-20.md"
+    "Unbenannt.canvas"
   ]
 }
