@@ -333,3 +333,96 @@ f[u] := zeit;
 ![[Pasted image 20260427104526.png]]
 ![[Pasted image 20260427104539.png]]
 
+---
+## Kürzeste Wege
+
+- Graph G = (V,E,$\gamma$) mit einer Gewichtsfunktion $\gamma : E \rightarrow \mathbb N$ 
+- Weg durch G ist Liste von aneinanderstoßenden Kanten: $$P = (v_1,v_2),(v_2,v_3), ... , (v_{n-1}, v_n)$$
+- Gewicht oder Länge des Pfades: Aufsummierung der einzelnen Kantengewichte $$w(P)=\sum^{n-1}_{i=1}\gamma((v_i,v_i+1))$$
+---
+### Kruskals Algorithmus
+
+- gegeben: Teilmenge der Knoten/Kanten, optimaler Spannbaum
+- füge Knoten/Kante hinzu
+- Erweiterung des Spannbaums, dass er immernoch optimal ist
+- möglich mit *Kruskal-Algorithmus*
+
+***Kruskal:***
+
+	Führe den folgenden Schritt so oft wie möglich aus: Wähle unter den noch nicht ausgewählten Kanten von G (dem Graphen) die kürzeste Kante, die mit den schon gewählten Kanten keinen Kreis bildet.
+
+==Formalisierung:==
+```
+algorithm Kruskal(V, E, w)
+	Eingabe V: Knotenmenge, E: Kantenmenge, w: E → ℝ Gewicht 
+	E1 := ∅
+	while (V,E1) nicht zusammenhängend do 
+		wähle die kleinste Kante e ∈ E \ E1, 
+		die zwei Komponenten in (V, E1) verbindet
+		{oder die keinen Kreis erzeugen}
+	E1 := E1 ∪ {e}
+od
+```
+
+==Komplexität:== $O(|V|^2\cdot |E|)$
+
+==Optimierungen:==
+
+1. Suche nach kleinster Kante: wird immer wieder benötigt mithilfe anderer Datenstrukturen (bspw. sorted list, priority queue, heap)   -> $O(|V|\cdot |E|+|E|\cdot log(|E|))$
+
+2. Testen, ob (V, E1 ∪ {e}) keinen Kreis enthält: KeinKreis(V,E), z.B. Tiefensuche, geeignete Operation *Union-Find*
+
+---
+
+**Union-Find**
+==Verkettete Listen:==
+- find: $O(n)$
+- union: $O(n)$
+
+![[Pasted image 20260511084729.png]]
+
+==Bäume:==
+- find: $O(h)$ (maximal n, balanciert log(n))
+- union: $O(1)$
+
+- Union: kleineren Baum an größeren hängen
+- Find: Kind direkt an Wurzel hängen (Pfadkompression)
+
+![[Pasted image 20260511085050.png]]
+
+---
+
+==Gesamtverfeinerung Kruskal:==
+![[Pasted image 20260511085247.png]]
+
+*Beispiel:*
+
+![[Pasted image 20260511085350.png]]
+![[Pasted image 20260511085413.png]]
+
+---
+### Djiktras Algorithmus
+
+- Suche nach optimalem Pfad zu jedem Knoten, nicht optimaler Spannbaum
+- iterative Erweiterung einer Menge von "billig" ereichbaren Knoten
+
+![[Pasted image 20260511085923.png]]
+
+*Initialisierung:*
+Q = < (s:0), (u: ∞), (v: ∞), (x: ∞), (y: ∞) >
+![[Pasted image 20260511090244.png]]
+*Schrittfolge:*
+
+Q = < (x: 5), (u: 10), (v: ∞), (y: ∞) >
+![[Pasted image 20260511090316.png]]
+
+Q = < (y: 7), (u: 8), (v: ∞) >
+![[Pasted image 20260511090333.png]]
+
+Q = < (u: 8), (v: 13) >
+![[Pasted image 20260511090352.png]]
+
+Q = < (v: 9) > 
+![[Pasted image 20260511090425.png]]
+
+---
