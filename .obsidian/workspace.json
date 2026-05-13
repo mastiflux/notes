@@ -20,17 +20,17 @@
             }
           },
           {
-            "id": "e4a0483c8366d798",
+            "id": "bbba5fb2da9154db",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Semester/Lineare Algebra/Lineare Gleichungssysteme.md",
+                "file": "2. Semester/Lineare Algebra/lernzettel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lineare Gleichungssysteme"
+              "title": "lernzettel"
             }
           }
         ],
@@ -207,10 +207,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e4a0483c8366d798",
+  "active": "bbba5fb2da9154db",
   "lastOpenFiles": [
     "2. Semester/Lineare Algebra/Skript-LineareAlgebra-2025-09.pdf",
+    "2. Semester/Lineare Algebra/Euklidische Vektorräume.md",
+    "2. Semester/Lineare Algebra/Aufgaben10-SS26.pdf",
+    "2. Semester/Lineare Algebra/lernzettel.md",
     "2. Semester/Lineare Algebra/Lineare Gleichungssysteme.md",
+    "2. Semester/Lineare Algebra/Aufgaben9-SS26-Lsg.pdf",
+    "2. Semester/Lineare Algebra/Aufgaben8-SS26-Lsg.pdf",
+    "2. Semester/Lineare Algebra/Aufgaben7-SS26-Lsg.pdf",
+    "2. Semester/Lineare Algebra/Aufgaben6-SS26-Lsg.pdf",
     "Pasted image 20260513084650.png",
     "Pasted image 20260513084300.png",
     "2. Semester/Prog2/lernzettel_prog2.md",
@@ -218,11 +225,6 @@
     "2. Semester/Prog2/Prog_07_Exceptions.pdf",
     "2. Semester/Prog2/Prog_11_JavaFX.pdf",
     "2. Semester/Prog2/Prog_10_Modularisierung.pdf",
-    "2. Semester/Prog2/Prog_09_Collections.pdf",
-    "2. Semester/Prog2/Prog_08_Generics.pdf",
-    "2. Semester/Prog2/Prog_06_Vererbung.pdf",
-    "2. Semester/Prog2/Prog_04_UML.pdf",
-    "2. Semester/AlgoDat/04.AuD_Sortieren.pdf",
     "2. Semester/AlgoDat/Klausurvorbereitung AuD.md",
     "2. Semester/Betriebssysteme/Prozesse.md",
     "2. Semester/AlgoDat/Graphen.md",
@@ -242,7 +244,6 @@
     "2. Semester/Betriebssysteme/BS-07Ua-IPC.md",
     "2. Semester/Klausurvorbereitung.md",
     "2. Semester/UML/State Charts.md",
-    "2. Semester/Lineare Algebra/Euklidische Vektorräume.md",
     "2. Semester/AlgoDat/Hashing.md",
     "2. Semester/Prog2/Prog2_Testat1_Notizen.md",
     "2. Semester/Prog2/Prog2 Testat1 Notizen.md",
@@ -253,7 +254,6 @@
     "2. Semester/AlgoDat/Fragestunde Notizen.md",
     "2. Semester/Datenbanken/Übungsaufgabe 2 - Felix Häse.md",
     "2. Semester/Datenbanken/HandsOn.md",
-    "2. Semester/AlgoDat/Bäume.md",
     "Unbenannt.canvas"
   ]
 }
