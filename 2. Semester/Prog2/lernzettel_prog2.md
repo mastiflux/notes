@@ -94,12 +94,12 @@ Modularisierung hilft dabei, Ordnung in Programme zu bringen, Zugriffsrechte zu 
 
 ### Sichtbarkeits-Hierarchie
 
-| Modifier | Eigene Klasse | Eigenes Paket | Unterklassen | Überall |
-|---|:---:|:---:|:---:|:---:|
-| `private` | Ja | Nein | Nein | Nein |
-| *(kein Modifier)* | Ja | Ja | Nein | Nein |
-| `protected` | Ja | Ja | Ja | Nein |
-| `public` | Ja | Ja | Ja | Ja |
+| Modifier          | Eigene Klasse | Eigenes Paket | Unterklassen | Überall |
+| ----------------- | :-----------: | :-----------: | :----------: | :-----: |
+| `private`         |      Ja       |     Nein      |     Nein     |  Nein   |
+| *(kein Modifier)* |      Ja       |      Ja       |     Nein     |  Nein   |
+| `protected`       |      Ja       |      Ja       |      Ja      |  Nein   |
+| `public`          |      Ja       |      Ja       |      Ja      |   Ja    |
 
 ### Innere Klassen
 

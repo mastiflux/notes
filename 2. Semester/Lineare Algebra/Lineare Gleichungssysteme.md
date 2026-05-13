@@ -9,6 +9,61 @@ $A * \vec{x} = \vec{b}$
 Homogen:
 $A * \vec{x} = \vec{o}$
 
+---
+### Räumliche Struktur der Lösungsräume
+
+$f:\mathbb R^n \rightarrow \mathbb R^m$
+Kern(f) = $\{ v\in\mathbb R^n|f(v)=0\}$
+Bild(f) = $\{ f(v) \in \mathbb R^n|v\in\mathbb R^n\}$
+
+---
+**Orthogonalität von Untervektorräumen**
+
+Wenn $\forall u\in U$
+
+---
+**Urbildraum $\mathbb R^n$**
+
+- Vektoren aus Kern(f) - lösen $A\cdot x =o$ -> sind orthogonal zu Zeilenvektoren
+- Zeilenvektoren von A - spannen Zeilenraum auf
+=> *Kern(f) ist orthogonal zum Zeilenraum*
+$$dim Kern(f)=n-rg(A)$$ 
+- Dimension Zeilenraum: $rg(A)$
+---
+**Zielraum $\mathbb R^m$**
+
+- $\mathbb R^m$ - Orthogonalbasis $\{b_1,...,b_m\}$
+- Bild(f) - Teilmenge des $\mathbb R^m$, $dim Bild(f) = rg(A) = r$, Basisvektoren $b_1,...b_r$, wird von Spaltenvektoren von A aufgespannt ("Spaltenraum")
+- Raum, in dem keine Bilder liegen - Basisvektoren $b_{r+1},...b_m$
+
+> Bild(f) und Raum, in dem keine Bilder sind, sind *orthogonal*
+
+---
+
+![[Pasted image 20260513084300.png]]
+![[Pasted image 20260513084650.png]]
+
+*Wenn f injektiv:*
+- Kern(f)=$\{o\}$
+- Dimension von Bild(f): $m-r$
+
+Darf $m>n$ gelten? -> ja
+
+Bsp. $f:\mathbb R^2\rightarrow\mathbb R^3$ --> A = 3 x 2 Matrix
+- dim Kern(f) = n - rg(A) = 0
+
+*Wenn f surjektiv:*
+- keine Bilder von f -> $o$
+- dim Bild(f): $m$
+
+*Wenn f bijektiv:*
+
+- Kern(f)=$\{o\}$ => dim Kern(f) = 0
+- wegen $n = dim Kern(f) + dim Bild (f)$ folgt $dim Bild(f) = n$
+- $dimBild(f)=m$ (da surjektiv) -> `n = m`
+$$f:\mathbb R^n\rightarrow \mathbb R^n$$
+==Argumentation über Dimensionen!!==
+---
 ## Bestimmung der Lösungsmenge mit Gauß-Jordan-Algorithmus
 
 - Die Lösungsmenge eines lineare GLS bleibt bei elementaren Zeilenumformungen unverändert!
