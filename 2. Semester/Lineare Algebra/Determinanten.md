@@ -70,7 +70,7 @@ $det(A)=|A|$**
 
 **_Formel:_**
 
-$\det(A) = \sum_{\pi \in S_n} \text{sign}(\pi) \prod_{i=1}^{n} a_{i,\pi(i)}$
+$$\det(A) = \sum_{\pi \in S_n} \text{sign}(\pi) \prod_{i=1}^{n} a_{i,\pi(i)}$$
 
 ---
 
