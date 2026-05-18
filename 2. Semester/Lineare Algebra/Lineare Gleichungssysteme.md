@@ -5,9 +5,9 @@
 	Zu jedem inhomogenen Gleichungssystem gehört ein homogenes Gleichungssystem.
 
 Inhomogen:
-$A * \vec{x} = \vec{b}$
+$A \cdot \vec{x} = \vec{b}$
 Homogen:
-$A * \vec{x} = \vec{o}$
+$A \cdot \vec{x} = \vec{o}$
 
 ---
 ### Räumliche Struktur der Lösungsräume
