@@ -28,15 +28,26 @@
               "type": "markdown",
               "state": {
                 "file": "2. Semester/Lineare Algebra/Euklidische Vektorräume.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Euklidische Vektorräume"
             }
+          },
+          {
+            "id": "803300d56075538e",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "2. Semester/Lineare Algebra/Aufgaben6-SS26-Lsg.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Aufgaben6-SS26-Lsg"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,10 +220,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c77a3866ab53ecb5",
+  "active": "c34f92267fe9700b",
   "lastOpenFiles": [
-    "2. Semester/Lineare Algebra/Lineare Gleichungssysteme.md",
+    "2. Semester/Lineare Algebra/Aufgaben6-SS26-Lsg.pdf",
     "2. Semester/Lineare Algebra/Euklidische Vektorräume.md",
+    "2. Semester/Lineare Algebra/Lineare Gleichungssysteme.md",
     "2. Semester/Lineare Algebra/Determinanten.md",
     "2. Semester/Lineare Algebra/lernzettel.md",
     "2. Semester/Prog2/lernzettel_prog2.md",
@@ -222,7 +234,6 @@
     "2. Semester/Lineare Algebra/Aufgaben9-SS26-Lsg.pdf",
     "2. Semester/Lineare Algebra/Aufgaben8-SS26-Lsg.pdf",
     "2. Semester/Lineare Algebra/Aufgaben7-SS26-Lsg.pdf",
-    "2. Semester/Lineare Algebra/Aufgaben6-SS26-Lsg.pdf",
     "Pasted image 20260513084650.png",
     "Pasted image 20260513084300.png",
     "2. Semester/Prog2/Prog_12_Threads.pdf",

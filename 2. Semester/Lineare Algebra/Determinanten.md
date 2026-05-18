@@ -1,6 +1,6 @@
 ## Permutationen
 
-**Eine bijektive Abbildung $\pi$ einer endlichen Menge $X$ in sich wird als _Permutation_ von $X$ bezeichnet. Man schreibt: $\pi\,:\,X\rightarrow X$ 
+**Eine bijektive Abbildung $\pi$ einer endlichen Menge $X$ in sich wird als _Permutation_ von $X$ bezeichnet. Man schreibt: $\pi\,:\,X\rightarrow X$ **
 
 ---
 ### Eigenschaften
@@ -194,6 +194,7 @@ $$det(A)=a_{j1}A_{j1}+a_{j2}A_{j2}+...\,=\sum^n_{i=1}{a_{ij}A_{ij}}$$
 - ==Formel:==
 
 $$\displaystyle A^{-1}=\frac{1}{det(A)}adj(A)$$ 
+
 ---
 ## Cramersche Regel
 
